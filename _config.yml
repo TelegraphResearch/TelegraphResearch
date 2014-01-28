@@ -1,0 +1,4 @@
+exclude: ['scss/*', 'config.rb', '_jekyll_s3.rb', 's3_website.yml']
+markdown: rdiscount
+pygments: false
+permalink: /:title
