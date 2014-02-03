@@ -1,0 +1,30 @@
+# Structure of each report
+# name - name of the section
+# label - CSS label and file name
+
+-   name:   Summary
+    label:  summary
+
+-   name:   Market Overview
+    label:  market
+
+-   name:   Company History
+    label:  history
+
+-   name:   Investment Timeline
+    label:  timeline
+
+-   name:   Potential Returns
+    label:  returns
+
+-   name:   Competitive Landscape
+    label:  competitors
+
+-   name:   Comparable Exits
+    label:  exits
+
+-   name:   Technology
+    label:  technology
+
+-   name:   Opinions
+    label:  opinions

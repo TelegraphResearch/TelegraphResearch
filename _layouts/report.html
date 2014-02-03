@@ -1,0 +1,13 @@
+---
+layout: post
+---
+{{ content }}
+
+{% for section in site.data.reports %}
+{% capture include_location %}reports/{{ page.label }}/{{section.label}}.md{% endcapture %}
+    <h2 class="{{ section.label }}">{{section.name}}</h2>
+    {% capture article %}{% include {{include_location}} %}{% endcapture %}
+    {{ article | markdownify }}
+{% endfor %}
+
+hhk

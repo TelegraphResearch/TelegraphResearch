@@ -1,0 +1,76 @@
+<meta charset="utf-8" />
+<title>
+  {% if page.title %}
+  {{ page.title }} | {{ site.name}}
+  {% else %}
+    {{ site.name }}
+  {% endif %}
+</title>
+<meta name="description" content="{{ site.description }}" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% stylesheet compiled %}
+
+<!-- Typekit asynchronous loading -->
+<style type="text/css">
+    .wf-loading .container{
+        visibility:hidden !important;
+    }
+</style>
+<!-- <link rel="shortcut icon" type="image/png" href="data:image/png;base64,{{ site.data.images.favicon }}"> -->
+{% javascript jquery %}
+{% javascript retina %}
+{% javascript bootstrap %}
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+{% if page.header_insert %}
+    {{ page.header_insert}}
+{% endif %}
+
+{% if page.latex %}
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</script>
+{% endif %}
+
+{% if page.highcharts %}
+    {% javascript highcharts %}
+{% endif %}
+
+
+<!-- Google Analytics -->
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml"/>
+
+<!-- Whaddup facebook open graph -->
+<meta property="og:site_name" content="{{ site.name }}/>
+{% if page.title %}
+<meta property="og:title" content="{{page.title}}"/>
+{% endif %}
+<meta property="og:image" content="{{site.url}}{{ 'opengraph.jpg' | asset_path }}"/>
+<meta property="og:type" content="article"/>
+<meta property="og:link" content="{{site.url}}{{post.url}}"/>
+
+<!-- Twitter card meta tags -->
+<meta property="twitter:card" content="summary"/>
+{% if page.title %}
+<meta property="twitter:title" content="{{ page.title }}"/>
+{% else %}
+<meta property="twitter:title" content="{{ site.name }}"/>
+{% endif %}
+{% if page.summary %}
+<meta property="twitter:description" content="{{ page.summary }}"/>
+{% else %}
+<meta property="twitter:description" content="{{ site.description }}"/>
+{% endif %}
+<meta property="twitter:site" content="@{{site.twitter}}"/>
+
+<!-- Fuck off, pinterest -->
+<meta name="pinterest" content="nopin" />
+
