@@ -1,0 +1,7 @@
+{% for section in site.data.reports %}
+    <li>
+        <a href="#{{ section.label }}" class="to-{{ section.label }}">
+            {{ section.name }}
+        </a>
+    </li>
+{% endfor %}
