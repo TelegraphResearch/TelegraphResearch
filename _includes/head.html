@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>
   {% if page.title %}
-  {{ page.title }} | {{ site.name}}
+  {{ page.title }} | {{ site.name }}
   {% else %}
     {{ site.name }}
   {% endif %}
@@ -13,14 +13,39 @@
 
 <!-- Typekit asynchronous loading -->
 <style type="text/css">
-    .wf-loading .container{
+    .wf-loading .container
+    .wf-loading .nav-collapse {
         visibility:hidden !important;
     }
 </style>
+
+<!-- And the magical Typekit itself -->
+<script type="text/javascript">
+(function(d) {
+var config = {
+    kitId: 'zre2khj',
+          scriptTimeout: 3000
+              },
+                  h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+                    })(document);
+</script>
+
 <!-- <link rel="shortcut icon" type="image/png" href="data:image/png;base64,{{ site.data.images.favicon }}"> -->
 {% javascript jquery %}
 {% javascript retina %}
 {% javascript bootstrap %}
+{% if (page.report_menu == 'true') %}
+    <script type="text/javascript">
+        // Define this global variable so we can access it in script :-D
+        labels = [
+        {% for section in site.data.reports %}
+            "{{section.label}}",
+        {% endfor %}
+        ];
+    </script>
+    {% javascript scroller %}
+{% endif %}
+
 
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>

@@ -1,5 +1,5 @@
 {% for section in site.data.reports %}
-    <li>
+<li{% if (forloop.first) %} class="active" {% endif %}>
         <a href="#{{ section.label }}" class="to-{{ section.label }}">
             {{ section.name }}
         </a>

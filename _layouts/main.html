@@ -2,7 +2,6 @@
 layout: default
 ---
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    {{ site.title }}  
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -10,6 +9,7 @@ layout: default
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
+        <a class="navbar-brand" href="/"><span id="logo">{{ site.name }} </span></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -22,19 +22,25 @@ layout: default
 
 
 <div class="container torso">
-
     <div class="row">
-        <div class="col col-lg-2 col-lg-offset-1 col-md-2 col-sm-2 hidden-xs">
-            {% if (page.sidebar != 'false') %}
-                <ul class="nav nav-pills nav-stacked sidebar hidden-xs">
-                    {% include report_menu.html %}
-                </ul>
-            {% endif %}
+        <div class="col col-lg-2 col-lg-offset-1 col-md-2 hidden-sm hidden-xs">
+            <!-- scroller used to be here -->
         </div>
         <div class="col col-sm-10 col-md-8 col-lg-6 content">
-            
+
             {{ content }}
 
+        </div>
+        <div class="col col-lg-2 col-lg-offset-1 col-md-2 col-sm-2 hidden-xs">
+            {% if (page.report_menu == 'true') %}
+            <div class="sidebar panel panel-default hidden-xs ">
+                <div class="report-menu panel-body">
+                    <ul class="nav nav-pills nav-stacked">
+                        {% include report_menu.html %}
+                    </ul>
+                </div>
+            </div>
+            {% endif %}
         </div>
     </div>
 </div>

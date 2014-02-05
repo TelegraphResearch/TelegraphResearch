@@ -10,14 +10,6 @@
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
 
-    .logo {
-        width: 100%;
-        text-align: center;
-        position: absolute;
-        height: 100%;
-        display: block;
-        padding: 11px 0;
-    }
     .navbar-toggle {
         border: 0;
         background-color: black;
@@ -29,6 +21,23 @@
         border-radius: 0;
         -webkit-border-radius: 0px;
         -moz-border-radius: 0px;
+    }
+    #logo {
+        font-family: adelle, "Times New Roman", serif;
+        font-weight: 100;
+        font-size: 130%;
+        margin-left: 5px;
+        color: white;
+        letter-spacing: 3px;
+    }
+    .navbar-collapse {
+        border: 0;
+    }
+    .navbar {
+        border: 0;
+    }
+    .navbar-nav li a {
+        color: white;
     }
 }
 
@@ -78,3 +87,77 @@ footer {
     font-size: 12px;
 }
 
+.torso {
+    padding-top: 80px;
+}
+
+.navbar-nav {
+    font-family: @font-family-sans-serif;
+    padding-right: 10px;
+}
+
+
+li {
+    font-family: @font-family-sans-serif;
+}
+
+.content p{
+    font-size: 115%;
+    line-height: 162%;
+    text-align: justify;
+
+    section {
+        padding: 12px 0;
+    }
+    margin: 0 0 15px;
+}
+
+header {
+    a {
+        h1 {
+            color: black;
+            font-weight: 700;
+            font-size: 40px;
+        }
+    }
+}
+
+p a {
+    font-weight: 600;
+    color: #707070;
+    text-decoration: underline;
+}
+
+/* Nav sidebar */
+.panel {
+    border-radius: 0;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+}
+.nav-pills > li > a, .pane-default, .panel-default .panel-body {
+    background-color: #dddddd;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    border-radius: 0;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-color: #dddddd;
+    color: black;
+    font-weight: 600;
+}
+
+.report-menu {
+    min-width: 216px;
+    a {
+        color: black;
+    }   
+}
+
+.navbar-brand {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    height: 100%;
+    display: block;
+}
