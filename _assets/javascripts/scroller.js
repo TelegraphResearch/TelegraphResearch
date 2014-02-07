@@ -21,4 +21,12 @@ $("document").ready(function() {
 
          });
     });
+    // Fixed sidebar sucks. Set width to parent. 
+    var sideResize = function() {
+        $('.sidebar').width($('.sidebar').parent().width());
+    }
+
+    sideResize();
+    // Add a listener on window reize
+    $(window).resize(function() { sideResize() });
 });

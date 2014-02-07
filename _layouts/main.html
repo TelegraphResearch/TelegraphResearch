@@ -2,36 +2,35 @@
 layout: default
 ---
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/"><span id="logo">{{ site.name }} </span></a>
-    </div>
+    <div class="container no-padding">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><span id="logo">{{ site.name }} </span></a>
+        </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav">
-            {% include navigation.html %}
-        </ul>
-    </div><!-- /.navbar-collapse -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                {% include navigation.html %}
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
 </nav>
 
 
 <div class="container torso">
     <div class="row">
-        <div class="col col-lg-2 col-lg-offset-1 col-md-2 hidden-sm hidden-xs">
-            <!-- scroller used to be here -->
-        </div>
-        <div class="col col-sm-10 col-md-8 col-lg-6 content">
+        <div class="col col-sm-8 col-md-9 col-lg-9 col-xs-12 content">
 
             {{ content }}
 
         </div>
-        <div class="col col-lg-2 col-lg-offset-1 col-md-2 col-sm-2 hidden-xs">
+        <div class="col col-lg-3 col-md-3 col-sm-4 hidden-xs">
             {% if (page.report_menu == 'true') %}
             <div class="sidebar panel panel-default hidden-xs ">
                 <div class="report-menu panel-body">
