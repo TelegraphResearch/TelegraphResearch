@@ -8,8 +8,10 @@ background_image: 'true'
         <div class="row">
             <div class="col col-sm-8 ">
             <h3>{{ site.description }}</h3>
-            {% capture description %}{% include description_long.md %}{% endcapture %}
-            {{ description | markdownify }}
+            <div class="hidden-xs">
+                {% capture description %}{% include description_long.md %}{% endcapture %}
+                {{ description | markdownify }}
+            </div>
         </div>
         <div class="col col-sm-4 social">
             <div class="social-container">

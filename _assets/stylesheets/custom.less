@@ -30,6 +30,10 @@
         margin-left: 5px;
         color: white;
         letter-spacing: 3px;
+        /* Make logo smaller on mobile */
+        @media (max-width: @screen-sm-max) {
+            font-size: 90%;
+        }
     }
     .navbar-collapse {
         border: 0;
@@ -165,3 +169,4 @@ p a {
         background-color: inherit;
     }
 }
+
