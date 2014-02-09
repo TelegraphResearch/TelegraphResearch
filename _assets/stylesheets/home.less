@@ -1,0 +1,28 @@
+@home-background: rgba(0,0,0,0.75);
+
+html { 
+    background: url('/images/background.jpg') no-repeat center center fixed; 
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.navbar-fixed-top {
+     /* Partially-opaque background color */
+     background-color: @home-background;
+}
+
+.hello-box {
+    position: absolute;
+    bottom: 0px; /* How far from bottom */
+    z-index: 80;
+    width: 100%;
+    background-color: @home-background;
+    .container {
+        padding: 20px 0 30px 0;
+        h3 {
+            color: white;
+        }
+    }
+}
