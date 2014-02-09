@@ -1,1 +1,2 @@
-Telegraph Research provides due diligence-style analysis of companies prior to a Series A funding round. Reports are published every two weeks.
+Telegraph Research provides technical, financial, and market analysis of startup companies prior to a Series A funding round. Reports are published on the 1st and 15th of every month.
+
