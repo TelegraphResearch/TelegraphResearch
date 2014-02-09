@@ -23,14 +23,22 @@ html {
         padding: 40px 0 30px 0;
         color: white !important;
     }
+
+    p {
+        font-size: 130%;
+        line-height: 130%
+    }
+
     h1,h3,h3,h4,h5,h6 {
         margin-top: 0;
     }
 
     .social {
         .social-container {
+            width: 100%;
             float: right;
             img {
+                float: right;
                 max-height: 100%;
                 max-width: 50%;
                 display: inline;
@@ -39,6 +47,15 @@ html {
                 opacity: .88;
                 &:hover { opacity: 1; }
 
+            }
+        }
+        .copyright {
+            text-align: right;
+            font-size: 80%;
+            margin-top: 55px;
+            opacity: .7;
+            a {
+                color: inherit;
             }
         }
     }

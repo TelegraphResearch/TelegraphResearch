@@ -6,12 +6,12 @@ background_image: 'true'
 <div class="hello-box">
     <div class="container">
         <div class="row">
-            <div class="col col-sm-10 col-xs-12">
+            <div class="col col-sm-8 ">
             <h3>{{ site.description }}</h3>
             {% capture description %}{% include description_long.md %}{% endcapture %}
             {{ description | markdownify }}
         </div>
-        <div class="col col-sm-2 hidden-xs social">
+        <div class="col col-sm-4 social">
             <div class="social-container">
                 <a href="{{ site.facebook_url }}">
                     <img src="{{ 'social/facebook.svg' | asset_path }}" alt="{{site.name}} on Facebook" />
@@ -19,6 +19,9 @@ background_image: 'true'
                 <a href="{{ site.twitter_url }}">
                     <img src="{{ 'social/twitter.svg' | asset_path }}" alt="@{{site.twitter}} on Twitter" />
                 </a>
+            </div>
+            <div class="copyright">
+                {% include copyright.html %}
             </div>
         </div>
     </div>
