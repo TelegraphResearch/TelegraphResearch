@@ -1,7 +1,23 @@
 ---
-layout: main
+layout: navigation
 ---
+<div class="container torso">
+    <div class="row">
+        <div class="col col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2  col-xs-12 content">
 
-<h1>{{ page.title }}</h1>
+            <article >
+                <header>
+                    <a href="{{ page.url }}"><h1>{{ page.title }}</h1></a>
+                </header>
+                <div class="content">
+                    {{ content }}
+                </div>
+            </article>
 
-{{ content }}
+        </div>
+    </div>
+</div>
+
+<footer class="container">
+    {% include footer.html %}
+</footer>
