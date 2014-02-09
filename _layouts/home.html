@@ -6,6 +6,9 @@ background_image: 'true'
 <div class="hello-box">
     <div class="container">
         <h3>{{ site.description }}</h3>
+        {% capture description %}{% include description_long.md %}{% endcapture %}
+        {{ description | markdownify }}
+
     </div>
 </div>
 
