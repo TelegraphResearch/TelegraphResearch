@@ -13,8 +13,7 @@
 
 <!-- Typekit asynchronous loading -->
 <style type="text/css">
-    .wf-loading .container
-    .wf-loading .nav-collapse {
+    .wf-loading .container {
         visibility:hidden !important;
     }
 </style>
@@ -66,6 +65,22 @@ var config = {
 
 {% if page.highcharts %}
     {% javascript highcharts %}
+{% endif %}
+
+{% if page.background_image == 'true' %}
+<style type="text/css">
+    html { 
+        background: url({{ 'background.jpg' | asset_path }}) no-repeat center center fixed; 
+        background-color: black;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .navbar-fixed-top {
+        background-color:rgba(0,0,0,0.5); /* Partially-opaque background color */
+    }
+</style>
 {% endif %}
 
 
