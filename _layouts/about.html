@@ -1,0 +1,68 @@
+---
+layout: navigation
+background_image: 'true'
+---
+
+<div class="about-content">
+
+    <!-- Description of Telegraph -->
+    <div class="biography">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-3">
+                    <h2>About</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-3">
+                    <h3>{{ site.description }}</h3>
+                    <p>{% site.description_long.md %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Authors -->
+    <div class="authors">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-3">
+                    <h2>The Authors</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-3">
+                    <img src="http://0-media-cdn.foolz.us/ffuuka/board/vp/image/1388/85/1388853599294.jpg" class="img-thumbnail" width="300px">
+                    <h3>Philip Thomas</h3>
+                    <p>Blah Blah Bllaaaah</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="http://0-media-cdn.foolz.us/ffuuka/board/vp/image/1388/85/1388853599294.jpg" class="img-thumbnail" width="300px">
+                    <h3>Andrew Hess</h3>
+                    <p>Ahhh hah hah ah hah hah hah hahah lorem ipsum I am awesome see how this writes we need a long paragraph here yeah yeah yeah yeah whatever mayne</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Same footer as home page, but just the social copyright -->
+<div class="hello-box">
+    <div class="container">
+        <div class="col col-sm-4 col-md-offset-8 social">
+            <div class="social-container">
+                <a href="{{ site.facebook_url }}">
+                    <img src="{{ 'social/facebook.svg' | asset_path }}" alt="{{site.name}} on Facebook" />
+                </a>
+                <a href="{{ site.twitter_url }}">
+                    <img src="{{ 'social/twitter.svg' | asset_path }}" alt="@{{site.twitter}} on Twitter" />
+                </a>
+            </div>
+            <div class="copyright">
+                {% include copyright.html %}
+            </div>
+        </div>
+    </div>
+</div>
+
+
