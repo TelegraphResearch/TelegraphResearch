@@ -2,8 +2,9 @@
 layout: main
 ---
 <article >
-    <header>
+    <header class="report-header">
         <a href="{{ page.url }}"><h1>{{ page.title }}</h1></a>
+        <small class="publish-date">Published {{ page.date | date: "%e %B %Y" }}.</small>
     </header>
     {% if page.summary %}
         <p class="lead">{{ page.summary}}</p>
