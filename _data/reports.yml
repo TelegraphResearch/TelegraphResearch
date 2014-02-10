@@ -14,6 +14,12 @@
 -   name:   Investment Timeline
     label:  timeline
 
+-   name:   Management Team
+    label:  management
+
+-   name:   Growth
+    label:  growth
+
 -   name:   Potential Returns
     label:  returns
 

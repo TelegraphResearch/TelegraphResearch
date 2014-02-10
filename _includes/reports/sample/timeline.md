@@ -1,0 +1,1 @@
+A detailed summary of all investment history in The Company. Each round will be outlined for its valuation at given time, the parties involved, and the size of the investment. Information for this section will be primarily sourced from SEC disclosures as well as popular technology news websites.
