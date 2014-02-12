@@ -1,0 +1,30 @@
+<script data-no-instant>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-47957738-1', 'telegraphresearch.com');
+
+
+    var _gauges = _gauges || [];
+    (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '52faf0a192c6ac4a7b002273');
+    t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(t, s);
+              })();
+
+    InstantClick.on('change', function() {
+        ga('send', 'pageview', location.pathname + location.search);
+        _gauges.push(['track']);
+
+    });
+
+   InstantClick.init();
+
+</script>
