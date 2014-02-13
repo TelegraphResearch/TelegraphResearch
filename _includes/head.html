@@ -35,7 +35,7 @@ var config = {
 {% javascript bootstrap %}
 {% javascript instantclick %}
 {% if (page.report_menu == 'true') %}
-    <script type="text/javascript">
+    <script type="text/javascript" data-no-instant>
         // Define this global variable so we can access it in script :-D
         labels = [
         {% for section in site.data.reports %}
@@ -76,6 +76,32 @@ var config = {
 
 <!-- Google Analytics -->
 
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-47957738-1', 'telegraphresearch.com');
+    ga('send', 'pageview');
+
+</script>
+
+<!-- and the gauges tracking code -->
+<script type="text/javascript">
+    var _gauges = _gauges || [];
+    (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '52faf0a192c6ac4a7b002273');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+    })();
+</script>
+
 
 <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml"/>
 <!-- Whaddup facebook open graph -->
@@ -103,4 +129,3 @@ var config = {
 
 <!-- Fuck off, pinterest -->
 <meta name="pinterest" content="nopin" />
-
