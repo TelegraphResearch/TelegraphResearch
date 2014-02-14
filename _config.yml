@@ -1,4 +1,4 @@
-exclude:    ['README.md', '_jekyll_s3.yml', 's3_website.yml', 'Gemfile', 'Gemfile.lock', 'readme.md']
+exclude:    ['README.md', '_jekyll_s3.yml', 's3_website.yml', 'Gemfile', 'Gemfile.lock', 'readme.md', 'minify.sh']
 markdown:   rdiscount
 pygments:   false
 permalink:  /:title
