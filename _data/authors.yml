@@ -3,7 +3,13 @@
 -   name:       Andrew Hess
     twitter:    andhess
     url:        'http://andhess.com'
+    linkedin:   'http://www.linkedin.com/pub/andrew-clayton-hess/20/83/4'
+    image:      'http://placehold.it/300x300'
+    bio:        'Andrew Hess is a recent graduate of Washington University in St. Louis with a Bachelor of Science in Systems Engineering and Electrical Engineering, plus a minor in Computer Science. While attending university, he conducted research projects in quantitative finance and charging electric vehicles and also served as the president of the Washington University Tech Entrepreneurs and vice president of the Society for Industrial and Applied Mathematics.'
 
 -   name:       Philip I. Thomas
     twitter:    philipithomas
-    url:        'http://philipithomas.com'
+    url:        'https://www.philipithomas.com/resume'
+    linkedin:   'http://linkedin.com/in/philipithomas.com'
+    image:      '/images/philip.jpg'
+    bio:        'Philip works as a software engineer at a security startup in San Francisco. He majored in systems engineering and physics, and worked on the technical due diligence team at <a href="http://cultivationcapital.com">Cultivation Capital</a>.'

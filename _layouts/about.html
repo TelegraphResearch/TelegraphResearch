@@ -1,7 +1,6 @@
 ---
 layout: page
 hide_header: 'true'
-
 ---
 
 <!-- Description of Telegraph -->
@@ -15,30 +14,26 @@ hide_header: 'true'
         <div class="row">
             <div class="col-sm-8">
                 <p>{% include description_long.md %}</p>
+                <p>
+                    Telegraph research is written by two engineers with backgrounds in finance and venture capital. The site aims to provide a technical perspective on 
             </div>
         </div>
-    </div>
-</div>
-
-<!-- The Authors -->
-<div class="authors">
-    <div class="container">
-        <div class="row" id="about">
-            <header>
-                <a href="{{ page.url }}#authors"><h1>Authors</h1></a>
-            </header>
+        <div class="row" >
+            <div class="col-sm-12">
+                <a href="{{ page.url }}#authors"><h2>Authors</h2></a>
+            </div>
         </div>
         <div class="row">
+            {% for author in site.data.authors %}
             <div class="col-sm-4">
-                <img src="http://0-media-cdn.foolz.us/ffuuka/board/vp/image/1388/85/1388853599294.jpg" class="img-thumbnail" width="300px">
-                <h3>Philip Thomas</h3>
-                <p>Blah Blah Bllaaaah</p>
+                <img src="{{ author.image }}" class="img-thumbnail" width="300px"alt="{{ author.name }}" >
+                <h3>{{ author.name }}</h3>
+                <p>{{ author.bio }}</p>
+                <a class="btn btn-primary btn-block" href="{{ author.url }}">Website</a>
+                <a class="btn btn-success btn-block" href="{{ author.linkedin }}">LinkedIn</a>
+                <a class="btn btn-info btn-block" href="{{ author.twitter }}">Twitter</a>
             </div>
-            <div class="col-sm-4">
-                <img src="http://0-media-cdn.foolz.us/ffuuka/board/vp/image/1388/85/1388853599294.jpg" class="img-thumbnail" width="300px">
-                <h3>Andrew Hess</h3>
-                <p>Ahhh hah hah ah hah hah hah hahah lorem ipsum I am awesome see how this writes we need a long paragraph here yeah yeah yeah yeah whatever mayne</p>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </div>
