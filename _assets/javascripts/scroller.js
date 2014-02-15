@@ -29,4 +29,9 @@ $("document").ready(function() {
     sideResize();
     // Add a listener on window reize
     $(window).resize(function() { sideResize() });
+
+    // This isn't scroller - but it makes markdown happier in reports
+    // Iteration is implicit
+    // Check out getbootstrap.com for all the other table cleasses we can use
+    $('table').addClass('table');
 });
