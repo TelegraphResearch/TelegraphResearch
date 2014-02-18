@@ -14,7 +14,7 @@ The following interview was conducted with Matt Mickiewicz, Co-Founder and CEO o
 
 
 <table class="table table-striped table-bordered">
-<tr><td>Philip</td><td>
+<tr><td style="min-width: 80px">Philip</td><td>
 How does a company begin using Hired?
 </td>
 </td></tr><tr><td>Matt</td><td>They submit an online application and have an onboarding call with one of our account managers. 
