@@ -4,7 +4,7 @@ In May 2011, LinkedIn [went public](http://online.wsj.com/news/articles/SB100014
 
 ###CyberCoders
 
-In December 2013, CyberCoders [was purchased by On Assignment](http://www.businesswire.com/news/home/20131206005553/en/Assignment-Closes-Acquisition-CyberCoders-Holdings#.UwRTK0JdVdc), Inc. (NYSE: ASGN), an international consulting recruiting agency, for $105 million in cash and performance-hinged equity.
+In December 2013, CyberCoders [was purchased by On Assignment](http://www.businesswire.com/news/home/20131206005553/en/Assignment-Closes-Acquisition-CyberCoders-Holdings#.UwRTK0JdVdc), Inc. (NYSE: [ASGN](https://www.google.com/finance?cid=656148)), an international consulting recruiting agency, for $105 million in cash and performance-hinged equity.
 
 ###Bright
 
