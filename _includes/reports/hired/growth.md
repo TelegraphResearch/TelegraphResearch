@@ -39,7 +39,7 @@ Based on our model, we estimate that, at present, about 40% of candidates that r
 
 [Click here to view the model in Google Drive.](https://docs.google.com/spreadsheet/ccc?key=0AvQtqc6_wGbXdFBYWDFpTjkyejctdHVGaG44SmFyN0E&usp=sharing)
 
-If interested in experimenting with the values, add it to your own Google Drive by:
+To experiment with the values, add it to your own Google Drive:
 
 ```
 View file in Google Drive -> File -> Make a copy... 
