@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Interview with Matt Mickiewicz of Hired.com
+title: Interview with Matt Mickiewicz, CEO and Founder of Hired.com
 permalink: /mickiewicz-interview/
 ---
 
