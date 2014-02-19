@@ -2,7 +2,7 @@ The Hired website is available at [hired.com](https://hired.com/). The website i
 
 Recruiters we spoke with who use the Hired platform had concerns about the security of the system. Specifically, companies on the Hired system were victims of a phishing attack sent by a Hired email address. The malicious email reportedly appeared to be an invoice from Hired.com hosted on Google Drive. However, the link led to a phishing page that stole the recruiters’ Google Account login information.
 
-During our [interview](http://stage.telegraphresearch.com/mickiewicz-interview/) with Co-Founder Matt Mickiewicz, he had the following to say about the incident:
+During our [interview](http://www.telegraphresearch.com/mickiewicz-interview/) with Co-Founder Matt Mickiewicz, he had the following to say about the incident:
 
 > So one of our employees had their GMail account hacked. So, some phishing emails were sent from her personal email address to our employers. But it wasn’t a data breach. No one gained database access to the application or the marketplace itself. 
 
