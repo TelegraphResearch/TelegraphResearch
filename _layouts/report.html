@@ -7,7 +7,7 @@ report_menu: 'true'
 {% for section in site.data.reports %}
 {% capture include_location %}reports/{{ page.label }}/{{section.label}}.md{% endcapture %}
     <section id="{{ section.label }}">
-        <h1>{{section.name}}</h1>
+        <h1 class="page-header">{{section.name}}</h1>
         {% capture article %}{% include {{include_location}} %}{% endcapture %}
         {{ article | markdownify }}
     </section>
