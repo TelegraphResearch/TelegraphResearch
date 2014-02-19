@@ -27,7 +27,7 @@ Based on our model, we estimate that, at present, about 40% of candidates that r
 ####February 2014 Auction Estimates
 
 | Applicants Per Week | Candidates per Weekly Auction | Candidate who Receive Offers | Candidates who Accept Offer |
-| :---- | :-- | :-- | :-- |
+| :----: | :--: | :--: | :--: |
 | 1000 | 45 | 38 | 15 |
 
 
