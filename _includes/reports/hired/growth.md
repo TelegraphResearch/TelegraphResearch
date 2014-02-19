@@ -41,9 +41,9 @@ Based on our model, we estimate that, at present, about 40% of candidates that r
 
 If interested in experimenting with the values, add it to your own Google Drive by:
 
-'''
-File -> Make a copy... 
-'''
+```
+View file in Google Drive -> File -> Make a copy... 
+```
 
 ###Future Funding
 
