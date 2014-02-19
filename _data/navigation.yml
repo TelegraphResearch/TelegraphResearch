@@ -1,0 +1,12 @@
+# URls in the main menu
+
+- name: About
+  href: /about/
+
+- name: Reports
+  href: /reports/
+
+- name: Report Structure
+  href: /report-structure/
+
+

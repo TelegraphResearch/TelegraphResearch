@@ -1,0 +1,25 @@
+---
+layout: navigation
+---
+<div class="container torso">
+    <div class="row">
+        <div class="col col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2  col-xs-12 content">
+
+            <article>
+                {% if page.hide_header != 'true' %}
+                    <header>
+                        <a href="{{ page.url }}"><h1>{{ page.title }}</h1></a>
+                    </header>
+                {% endif %}
+                <div class="content">
+                    {{ content }}
+                </div>
+            </article>
+
+        </div>
+    </div>
+</div>
+
+<footer class="footer container">
+    {% include copyright.html %}
+</footer>

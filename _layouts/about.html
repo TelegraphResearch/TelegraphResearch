@@ -1,0 +1,25 @@
+---
+layout: page
+title: About
+---
+
+<!-- Description of Telegraph -->
+<p>{% include description_long.md %}</p>
+<p>
+    Telegraph research is written by two engineers with backgrounds in finance and venture capital. The site aims to provide a technical perspective on companies with high growth potential.
+</p>
+<h2>Authors</h2>
+<div class="container">
+    <div class="row">
+        {% for author in site.data.authors %}
+        <div class="col-sm-4">
+            <img src="{{ author.image }}" class="img-thumbnail" width="300px"alt="{{ author.name }}" >
+            <h3>{{ author.name }}</h3>
+            <a class="btn btn-primary btn-block" href="{{ author.url }}">Website</a>
+            <a class="btn btn-success btn-block" href="{{ author.linkedin }}">LinkedIn</a>
+            <a class="btn btn-info btn-block" href="http://twitter.com/{{ author.twitter }}">Twitter</a>
+            <p>{{ author.bio }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>

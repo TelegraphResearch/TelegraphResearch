@@ -1,4 +1,28 @@
-exclude: ['scss/*', 'config.rb', '_jekyll_s3.rb', 's3_website.yml']
-markdown: rdiscount
-pygments: false
-permalink: /:title
+exclude:    ['README.md', '_jekyll_s3.yml', 's3_website.yml', 'Gemfile', 'Gemfile.lock', 'readme.md', 'minify.sh']
+markdown:   rdiscount
+pygments:   false
+permalink:  /:title
+
+# These are required for rss
+name:           Telegraph Research
+url:            'http://www.telegraphresearch.com'
+description:    Analysis of Innovative, High-Growth Companies
+copyright:      All rights reserved. 
+email:          'contact@telegraphresearch.com'
+twitter:        'telegraphres'
+twitter_url:    'http://twitter.com/telegraphres'
+facebook_url:   'https://www.facebook.com/telegraphresearch'
+rss_path:       /
+rss_name:       rss.xml
+assets:
+    dirname: assets
+    baseurl: /assets/
+    css_compressor: yui
+    js_compressor: yui
+    sources:
+        - _assets/javascripts
+        - _assets/stylesheets
+        - _assets/images
+    cachebust: hard
+    cache: false
+    debug: true

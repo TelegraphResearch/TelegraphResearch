@@ -1,0 +1,1 @@
+Growth will seek to forecast future expansion of The Company and assess where and when revenues may be generated. This forecast would outline a timeline and provide a reasonable prediction of such performance. A third party may be contacted to assist with financial modeling for this section.

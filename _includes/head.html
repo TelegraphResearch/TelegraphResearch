@@ -1,0 +1,133 @@
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+  {% if page.title %}
+  {{ page.title }} | {{ site.name }}
+  {% else %}
+    {{ site.name }}
+  {% endif %}
+</title>
+<meta name="description" content="{{ site.description }}" />
+{% stylesheet compiled %}
+
+<!-- Typekit asynchronous loading -->
+<style type="text/css">
+    .wf-loading .container {
+        visibility:hidden !important;
+    }
+</style>
+
+<!-- And the magical Typekit itself -->
+<script type="text/javascript">
+(function(d) {
+var config = {
+    kitId: 'zre2khj',
+          scriptTimeout: 3000
+              },
+                  h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+                    })(document);
+</script>
+
+<link rel="shortcut icon" type="image/png" href="data:image/png;base64,{{ site.data.images.favicon }}">
+{% javascript jquery %}
+{% javascript retina %}
+{% javascript bootstrap %}
+{% if (page.report_menu == 'true') %}
+    <script type="text/javascript">
+        // Define this global variable so we can access it in script :-D
+        labels = [
+        {% for section in site.data.reports %}
+            "{{section.label}}",
+        {% endfor %}
+        ];
+    </script>
+    {% javascript scroller %}
+{% endif %}
+
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+{% if page.header_insert %}
+    {{ page.header_insert}}
+{% endif %}
+
+{% if page.latex %}
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</script>
+{% endif %}
+
+{% if page.highcharts %}
+    {% javascript highcharts %}
+{% endif %}
+
+{% if page.background_image == 'true' %}
+    {% stylesheet home %}
+{% endif %}
+
+
+
+<!-- Google Analytics -->
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-47957738-1', 'telegraphresearch.com');
+    ga('send', 'pageview');
+
+</script>
+
+<!-- and the gauges tracking code -->
+<script type="text/javascript">
+    var _gauges = _gauges || [];
+    (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '52faf0a192c6ac4a7b002273');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+    })();
+</script>
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml"/>
+<!-- Whaddup facebook open graph -->
+<meta property="og:site_name" content="{{ site.name }}"/>
+{% if page.title %}
+<meta property="og:title" content="{{page.title}}"/>
+{% endif %}
+<meta property="og:image" content="{{site.url}}{{ 'opengraph.jpg' | asset_path }}"/>
+<meta property="og:type" content="article"/>
+<meta property="og:link" content="{{site.url}}{{post.url}}"/>
+
+<!-- Twitter card meta tags -->
+<meta property="twitter:card" content="summary"/>
+{% if page.title %}
+<meta property="twitter:title" content="{{ page.title }}"/>
+{% else %}
+<meta property="twitter:title" content="{{ site.name }}"/>
+{% endif %}
+{% if page.summary %}
+<meta property="twitter:description" content="{{ page.summary }}"/>
+{% else %}
+<meta property="twitter:description" content="{{ site.description }}"/>
+{% endif %}
+<meta property="twitter:site" content="@{{site.twitter}}"/>
+
+<!-- Fuck off, pinterest -->
+<meta name="pinterest" content="nopin" />
+
+<!-- Google Plus -->
+<link rel="publisher" href="https://plus.google.com/106211600411234084262" />

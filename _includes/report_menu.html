@@ -1,0 +1,7 @@
+{% for section in site.data.reports %}
+<li{% if (forloop.first) %} class="active" {% endif %}>
+        <a href="#{{ section.label }}" class="to-{{ section.label }}" data-no-instant>
+            {{ section.name }}
+        </a>
+    </li>
+{% endfor %}

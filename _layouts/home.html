@@ -1,0 +1,32 @@
+---
+layout: navigation
+background_image: 'true'
+---
+
+<div class="hello-box">
+    <div class="container">
+        <div class="row">
+            <div class="col col-sm-8 ">
+            <h3>{{ site.description }}</h3>
+            <div class="hidden-xs">
+                {% capture description %}{% include description_long.md %}{% endcapture %}
+                {{ description | markdownify }}
+            </div>
+        </div>
+        <div class="col col-sm-4 social">
+            <div class="social-container">
+                <a href="{{ site.facebook_url }}">
+                    <img src="{{ 'social/facebook.svg' | asset_path }}" alt="{{site.name}} on Facebook" />
+                </a>
+                <a href="{{ site.twitter_url }}">
+                    <img src="{{ 'social/twitter.svg' | asset_path }}" alt="@{{site.twitter}} on Twitter" />
+                </a>
+            </div>
+            <div class="copyright">
+                {% include copyright.html %}
+            </div>
+        </div>
+    </div>
+</div>
+
+
