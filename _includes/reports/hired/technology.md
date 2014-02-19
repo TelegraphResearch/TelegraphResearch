@@ -6,4 +6,4 @@ During our [interview](http://www.telegraphresearch.com/mickiewicz-interview/) w
 
 > So one of our employees had their GMail account hacked. So, some phishing emails were sent from her personal email address to our employers. But it wasn’t a data breach. No one gained database access to the application or the marketplace itself. 
 
-Based on this information, we conclude that there is not an obvious security vulnerability in the Hired system. Enforcing a security policy with two-step verification on Google accounts would prevent similar attacks in the future. 
+Based on this information, we conclude that there is not an obvious security vulnerability in the Hired system. Enforcing a security policy with two-step verification on Google accounts would prevent similar opportunistic attacks in the future. 
