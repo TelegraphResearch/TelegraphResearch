@@ -1,4 +1,4 @@
-###Financial Model
+##Financial Model
 
 To determine the financial status of Hired.com, we built a financial model to estimate the number of job placements made. We based this model on a funnel analysis of candidates every month from their first auction to present and extended our model outlook to the fourth quarter of 2014. 
 
@@ -24,20 +24,34 @@ Based on our discussion with Matt, he stated that the number of job applicants a
 
 Based on our model, we estimate that, at present, about 40% of candidates that receive an offer accept a job through Hired. Our model shows that the company became profitable between September and October of 2013. In January 2013, Hired raised a $2.7 million venture round. Based on our model, between raising that round in January and reaching breakeven, about $700,000 was lost, thus leaving a considerable cash position for the business. This appears inline with the statement in investor Semil Shaw’s same blog post about their January 2013 funding round: “They didn’t need to raise money.”
 
-####February 2014 Auction Estimates
+###February 2014 Auction Estimates
 
 | Applicants Per Week | Candidates per Weekly Auction | Candidate who Receive Offers | Candidates who Accept Offer |
 | :----: | :--: | :--: | :--: |
 | 1000 | 45 | 38 | 15 |
 
 
-####Estimated EBITDA
+###Estimated EBITDA
+<table>
+    <tr>
+        <th>2013 Q3</th>
+        <th>2013 Q4</th>
+        <th>2014 Q1</th>
+        <th>2014 Q2</th>
+        <th>2014 Q3</th>
+        <th>2014 Q4</th>
+    </tr>
+    <tr>
+        <td class="danger">-$125,183</td>
+        <td class="success">$78,222</td>
+        <td class="success">$322,865</td>
+        <td class="success">$622,131</td>
+        <td class="success">$845,451</td>
+        <td class="success">$992,130</td>
+    </tr>
+</table>
 
-| 2013 Q3 | 2013 Q4 | 2014 Q1 | 2014 Q2 | 2014 Q3 | 2014 Q4 |
-| :---- | :---- | :----- | :----- |
-| -$125,183 | $78,222 | $322,865 | $622,131 | $845,451 | $992,130 |
-
-[Click here to view the model in Google Drive.](https://docs.google.com/spreadsheet/ccc?key=0AvQtqc6_wGbXdFBYWDFpTjkyejctdHVGaG44SmFyN0E&usp=sharing)
+<a href="https://docs.google.com/spreadsheet/ccc?key=0AvQtqc6_wGbXdFBYWDFpTjkyejctdHVGaG44SmFyN0E&usp=sharing" class="btn btn-block btn-info">View the model in Google Drive</a>
 
 To experiment with the values, add it to your own Google Drive:
 
@@ -45,7 +59,7 @@ To experiment with the values, add it to your own Google Drive:
 View file in Google Drive -> File -> Make a copy... 
 ```
 
-###Future Funding
+##Future Funding
 
 Based on our model, Hired will net nearly a quarter million dollars in profit per month by the end of 2014. Do they need to raise additional funding?
 

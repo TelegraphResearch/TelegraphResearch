@@ -1,15 +1,15 @@
 Hired is a participant in the staffing and recruiting industry, specifically focusing on filling technical software roles at venture-backed or publicly-traded companies. Currently, they focus on recruitment for software developers with about 80% of their business in the San Francisco Bay area. In the San Francisco Bay, demand is high for talented engineers with six figure salaries for new graduates and company referral bonuses for new hires regularly exceeding $10,000. 
 
-###Size
+##Size
 The demand for talented software engineers at technology behemoths such as Apple and Google has increased both the competitiveness and salary in the software industry as a whole. According to inside sources, Apple relies on a network of over 1000 salaried and contract recruiters to staff the company. Perks such as private buses, free meals from private chefs, on-site gyms, and even [private ferries](http://www.sfgate.com/bayarea/article/Facebook-ferry-service-the-next-tech-shuttle-5229887.php) have become the norm in the technology industry.   
 
-###Major Participants
+##Major Participants
 
 The most significant company in the recruiting industry is LinkedIn. Founded in 2003, the company now holds a $22 billion market capitalization and nearly 200 active members. It is one of the most important tools to a recruiter, enabling one to parse through and reach out to thousands of potential candidates. LinkedIn is free for members to join, but recruiters each pay a substantial fee of about $8,000 per year to view and contact member profiles. In 2013 the company earned $27mm in profits on $1.5B in revenue.
 
 While large tech companies maintain a staff of recruiters to search for talent, there are also many third party recruiting agencies for hire. These agencies are small to medium sized, can be found in any US city, and serve as a middleman to connect talented people with companies that are hiring. Recruiters working for a company are paid on salary, but these third-party recruiters work mostly on a commission-based compensation plan. Generally, these recruiters demand an upfront fee of 15-20% of a candidate’s yearly salary when he/she accepts an offer. This fee is non-reimbursable, however a recruiter will generally replace a candidate pro-bono if the initial one leave the company in the first 90 days.
 
-###History and Trends
+##History and Trends
 
 Companies place high emphasis on employee referrals due to the low recruiting cost and high retention of these candidates. Financial payment startup [Stripe reported](http://firstround.com/article/How-Stripe-built-one-of-Silicon-Valleys-best-engineering-teams) that 70% of their hires come in via referrals while under 5% came from dedicated recruiting. They found that candidates brought in through this channel often failed to meet hiring standards and instead heavily rely on referrals and inbound candidates (applications through company website).
 
@@ -17,7 +17,7 @@ There still remains an high demand for quality talent in the tech industry, and 
 
 In the past few years, a few companies have sprung up seeking to fix the massive inefficiencies with the current recruiting system by building a career marketplace. Some take a personalized approach while others have looked at it like a data science problem; attempting to statistically compute where a candidate best fits with machine learning techniques. Regardless, the goals of all of these companies are to streamline the process: reduce time spent screening candidates, offer better candidates, and make it easy for candidates to find the right company without an overwhelmed inbox. Hired sits in this class and uses a personalized approach with an auction format.
 
-###Key Factors
+##Key Factors
 
 Hired takes a unique approach relative to third-party recruiters. Rather than serving as the advocate of a company to pursue candidates, they serve as the advocate of a select group of candidates. They help these candidates find positions at a variety of companies with their unique auction marketplace. 
 
