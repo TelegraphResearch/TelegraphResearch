@@ -33,5 +33,5 @@ $("document").ready(function() {
     // This isn't scroller - but it makes markdown happier in reports
     // Iteration is implicit
     // Check out getbootstrap.com for all the other table cleasses we can use
-    $('table').addClass('table');
+    $('table').addClass('table table-striped table-bordered');
 });
