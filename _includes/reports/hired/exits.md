@@ -1,6 +1,6 @@
 ##LinkedIn IPO
 
-In May 2011, LinkedIn [went public](http://online.wsj.com/news/articles/SB10001424052748704816604576333132239509622) and saw its share price double on the first day of trading. Although LinkedIn is very different from Hired, it did open the door for many other businesses in the recruting space. LinkedIn has demonstrated how big the market is and [continues to perform well](http://money.cnn.com/quote/quote.html?symb=LNKD) despite many noted inefficiencies.
+In May 2011, LinkedIn [went public](http://online.wsj.com/news/articles/SB10001424052748704816604576333132239509622) and saw its share price double on the first day of trading. Although LinkedIn is very different from Hired, it did open the door for many other businesses in the recruiting space. LinkedIn has demonstrated how big the market is and [continues to perform well](http://money.cnn.com/quote/quote.html?symb=LNKD) despite many noted inefficiencies.
 
 ##CyberCoders
 

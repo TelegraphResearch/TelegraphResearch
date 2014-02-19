@@ -6,6 +6,6 @@
 | <a href="#management" class="to-management">Management Team</a> | Hired was co-founded by three successful entrepreneurs: Matt Mickiewicz, founder of 99 Designs and Flippa, Douglas Feirstein, founder of LiveOps, and Allan Grant, founder of Curebit.
 | <a href="#growth" class="to-growth">Growth Outlook and Potential Returns</a> | Investors have stated that Hired was profitable as of October 2013. We built a model that estimates that about 40% of candidates that receive an offer through Hired accept. |
 | <a href="#competitors" class="to-competitors">Competitive Landscape</a> | LinkedIn dominates the recruiting market, and most startups aim to compete with LinkedIn using proprietary algorithmic approaches. |
-| <a href="#exits" class="to-exits">Comparable Exits</a> | After the LinkedIn IPO in May 2011, most comparable exits have consisted of acquisitinos by LinkedIn. |
+| <a href="#exits" class="to-exits">Comparable Exits</a> | After the LinkedIn IPO in May 2011, most comparable exits have consisted of acquisitions by LinkedIn. |
 | <a href="#technology" class="to-technology">Technology</a> | The Hired marketplace is built using Ruby on Rails. Security remains a concern after an employee email account was hijacked and sent phishing emails to clients. |
 | <a href="#opinions" class="to-opinions">Opinions</a> | Hired has a high offer rate, but the key metric is percentage of offers that are accepted.|
