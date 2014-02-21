@@ -1,5 +1,15 @@
 ##Financial Model
 
+<div class="panel panel-warning">
+    <div class="panel-heading"><h3 class="panel-title no-margin">Update - 20 February 2014</h3></div>
+    <div class="panel-body">
+        <p>After the original publication of this section, Hired CEO Matt Mickiewicz contacted Telegraph Research to correct that Hired currently curates 80-100 candidates per week. No changes to the model or analysis have been made, but readers are invited to <a href="https://docs.google.com/spreadsheet/ccc?key=0AvQtqc6_wGbXdFBYWDFpTjkyejctdHVGaG44SmFyN0E&usp=sharing">modify the financial analysis to reflect this information</a>.
+        </p>
+    </div>
+</div>
+
+
+
 To determine the financial status of Hired.com, we built a financial model to estimate the number of job placements made. We based this model on a funnel analysis of candidates every month from their first auction to present, and extended our model outlook to the fourth quarter of 2014. 
 
 Several important metrics from news articles were used to build the model. First, we found that Hired.com averages between 40 and 50 candidates per auction, and this number has appears to have been constant since the first auction, which completed in September 2012. In the model, we assume a constant 45 candidates per auction. According to the Hired.com homepage, 85% of candidates receive an offer. This means that about 38 candidates receive an offer per auction. The most important metric, which Matt declined to share during [our interview](/mickiewicz-interview/), is how many of these 38 candidates with offers accept a job through Hired. We found that the entire model was dependent on this vital statistic, so we attempted to make it the only independent variable. 
