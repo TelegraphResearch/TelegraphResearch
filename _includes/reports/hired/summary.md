@@ -1,7 +1,7 @@
 | Section | Description |
 | :-------- | :------------------------------------------------ |
+| <a href="#history" class="to-history">Company Overview</a> | Hired was founded in May 2012 as *Developer Auction*, but rebranded as Hired in September 2013 as they launched their first auction. Clients range from startups to Fortune 500 companies. |
 | <a href="#market" class="to-market">Market Overview</a>| Hiring for technology companies is a competitive but lucrative market. The main competition is LinkedIn, a $20 billion company that serves as the largest jobseeker database in the world. |
-| <a href="#history" class="to-history">Company History</a> | Hired was founded in May 2012 as *Developer Auction*, but rebranded as Hired in September 2013 as they launched their first auction. Clients range from startups to Fortune 500 companies. |
 | <a href="#timeline" class="to-timeline">Investment Timeline</a> | The three cofounders provided the initial funding for Hired. In January 2013, they raised a $2.7 million venture round with participation. |
 | <a href="#management" class="to-management">Management Team</a> | Hired was co-founded by three successful entrepreneurs: Matt Mickiewicz, founder of 99 Designs and Flippa, Douglas Feirstein, founder of LiveOps, and Allan Grant, founder of Curebit.
 | <a href="#growth" class="to-growth">Growth Outlook and Potential Returns</a> | Investors have stated that Hired was profitable as of October 2013. We built a model that estimates that about 40% of candidates that receive an offer through Hired accept. |

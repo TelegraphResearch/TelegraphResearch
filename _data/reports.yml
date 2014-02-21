@@ -5,11 +5,11 @@
 -   name:   Summary
     label:  summary
 
+-   name:   Company Overview
+    label:  history
+
 -   name:   Market Overview
     label:  market
-
--   name:   Company History
-    label:  history
 
 -   name:   Investment Timeline
     label:  timeline
