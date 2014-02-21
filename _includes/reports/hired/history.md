@@ -4,9 +4,9 @@ A job seeker applies to Hired using their LinkedIn profile, which functions as a
 
 From these applications, Hired approves a group of candidates to go to an auction. As of writing, these auctions each typically consist of 40-50 candidates, and they are conducted every week.
 
-Upon being accepted to an auction, a candidate is assigned an account manager who coaches the candidate through the process and assists them with improving their profile. The candidate’s profile serves as a resume that describes education background, skills, experiences, and significant projects. Candidates may also solicit written professional recommendations, which appear on the profile.
+Upon being accepted to an auction, a candidate is assigned a Talent Advocates who coaches the candidate through the process and assists them with improving their profile. The candidate’s profile serves as a resume that describes education background, skills, experiences, and significant projects. Candidates may also solicit written professional recommendations, which appear on the profile.
 
-Companies seeking access to the Hired marketplace must apply in a similar manner. To qualify, they must be venture-funded or publicly traded. Upon being accepted to the marketplace, companies gain access to the profiles of candidates in the current auction. The system prevents companies from being able to see any of their current or past employees.
+Companies seeking access to the Hired marketplace must apply in a similar manner. To qualify, they must be venture-funded or publicly traded. Upon being accepted to the marketplace, companies gain access to the profiles of candidates in the current auction. The system prevents companies from being able to see any of their current or past employees. Companies are also assigned an Account Manager.
 
 There is no cost for job applicants or companies to join the marketplace.
 
