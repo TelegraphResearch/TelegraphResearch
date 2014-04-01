@@ -1,4 +1,4 @@
-FOBO competes in the online classifieds industry and specializes in used electronics. Being just over two months since launching, the service is currently geographically exclusive to San Francisco. Their local, ultra-quick auctions with a guarantee for items to sell have caught on quickly and the company has already passed a $1 million run rate.
+FOBO competes in the online classifieds industry and specializes in used electronics. Since its launch two months ago, the service has only been active in the San Francisco Bay area. Their local, ultra-quick auctions with a guarantee for items to sell have caught on quickly and the company has already passed a $1 million run rate.
 
 ## Size
 
@@ -6,7 +6,7 @@ The entire online classifieds marketplace industry is valued at [over $20 billio
 
 ## Major Participants
 
-Used electronics can be exchanged via many different marketplaces, the largest two being eBay and Craigslist. Items purchased on eBay are paid for online and shipped, but items sold on Craigslist, like FOBO, are purchased locally and require an in-person exchange. There are many other ways that people choose to sell used electronics. Some establish an Amazon seller account, others prefer buyback programs such as those offered by companies like Newegg or RadioShack, while some prefer to sell to their friends and list the items for sale within specific groups on Facebook. The number of used goods exchanges is profuse, and some other exchanges discovered in Google Search include Glyde, Gazelle, Listia, and Yardsellr.
+Used electronics can be exchanged via many different marketplaces, the largest two being eBay and Craigslist. Items purchased on eBay are paid for online and shipped, but items sold on Craigslist, like FOBO, are purchased locally and require an in-person exchange of both goods and money. There are many other ways that people choose to sell used electronics. Some establish an Amazon seller account, others prefer buyback programs such as those offered by companies like Newegg or RadioShack, while some prefer to sell to their friends and list the items for sale within specific groups on Facebook. The number of used goods exchanges is profuse, and some other exchanges discovered in Google Search include Glyde, Gazelle, Listia, and Yardsellr.
 
 
 ## History and Trends
