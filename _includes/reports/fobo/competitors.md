@@ -2,7 +2,7 @@
 
 [eBay](http://www.ebay.com/) first began as AuctionWeb in September of 1995 as a personal project by Pierre Omidyar. The site offered timed auctions on any user-listed item, with anyone able to bid to purchase a listed item. The site quickly took off and saw immense growth, recording over [2 million auctions in 1997](http://en.wikipedia.org/wiki/EBay#History). The company went public in September 1998 and continued to grow throughout the following ten years. In 2013, the company saw yearly [revenues of $16 billion](http://www.businesswire.com/news/home/20140122006447/en/eBay-Reports-Fourth-Quarter-Full-Year-2013#.UzrZ_a1dU4A). eBay still offers its traditional consumer-to-consumer auctions, but also offers a broad variety of other services such as online money transfers through PayPal and event ticket trading through Stubhub.
 
-Today eBay  is a $70 billion corporation with strong sales. Unlike FOBO, sales on eBay are not limited by geographic region, nor does eBay demand such a high commission fee. eBay does not offer any guarantee that the item will sell, auctions run much longer, and sellers must go through the hassle of shipping the items.
+Today eBay is a $70 billion corporation with strong sales. Unlike FOBO, sales on eBay are not limited by geographic region, nor does eBay demand such a high commission fee. eBay does not offer any guarantee that the item will sell, auctions run much longer, and sellers must go through the hassle of shipping the items.
 
 ##Craigslist
 
