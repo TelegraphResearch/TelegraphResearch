@@ -6,12 +6,12 @@ The entire online classifieds marketplace industry is valued at [over $20 billio
 
 ## Major Participants
 
-Used electronics can be exchanged via many different marketplaces, the largest two being eBay and Craigslist. Items purchased on eBay are paid for online and shipped, but items sold on Craigslist, like FOBO, are purchased locally and require an in-person exchange. There are many other ways that people choose to sell used electronics. Some establish an Amazon seller account, others prefer buyback programs such as those offered by companies like Newegg or Radioshack, while some prefer to sell to their friends and list the items for sale within specific groups on Facebook. The number of used goods exchanges is profuse, and some other exchanges discovered in Google Search include Glyde, Gazelle, Listia, and Yardsellr.
+Used electronics can be exchanged via many different marketplaces, the largest two being eBay and Craigslist. Items purchased on eBay are paid for online and shipped, but items sold on Craigslist, like FOBO, are purchased locally and require an in-person exchange. There are many other ways that people choose to sell used electronics. Some establish an Amazon seller account, others prefer buyback programs such as those offered by companies like Newegg or RadioShack, while some prefer to sell to their friends and list the items for sale within specific groups on Facebook. The number of used goods exchanges is profuse, and some other exchanges discovered in Google Search include Glyde, Gazelle, Listia, and Yardsellr.
 
 
 ## History and Trends
 
-The closest competitor to FOBO is Craigslist. For local selling of items, Craigslist is the most popular service. To understand the history and trends in the online selling market, we analyze Craiglist. 
+The closest competitor to FOBO is Craigslist. For local selling of items, Craigslist is the most popular service. To understand the history and trends in the online selling market, we analyzed Craigslist. 
 
 ### Strengths
 Craigslist ranks as the tenth most popular website in the United States ([Alexa](http://alexa.com)), making it is the most popular marketplace for selling goods and services locally. Thus, its most important strength is its brand recognition and ubiquity - the website has a thriving market of sellers and it has a thriving market of buyers. In addition, Craigslist provides listings in a broad range of categories ranging from electronics to apartments to jobs. The interface for listing an item for sale is relatively simple and does not require creating an account. 
@@ -32,13 +32,13 @@ Craigslist can enter any new market with ease, thus allowing it to basically sel
 
 The selling experience, though simple, has the opportunity to be improved. For instance, an official mobile application that allows the capture and upload of images with a listing would increase transparency.
 
-Finally, currently Craiglist does not currently collect feedback about sellers after the transaction. Creating a buyer reputation system could make it easier to sell on the website. 
+Finally, currently Craigslist does not currently collect feedback about sellers after the transaction. Creating a buyer reputation system could make it easier to sell on the website. 
 
 ### Threats
 
-The main threat against Craigslist is that they are entrenched in so many geographic and product markets that the company is unlikely to respond to smaller threats. This means that there is the opportunity for companies to begin eroding the Craiglist market share by targeting a specific vertical in a specific market. 
+The main threat against Craigslist is that they are entrenched in so many geographic and product markets that the company is unlikely to respond to smaller threats. This means that there is the opportunity for companies to begin eroding the Craigslist market share by targeting a specific vertical in a specific market. 
 
-In addition, Craiglist does not allow bidding. This means that inefficiency in selling exists - specifically, that buyers are responsible for determining the price for their item when buyers may be willing to pay more.
+In addition, Craigslist does not allow bidding. This means that inefficiency in selling exists - specifically, that buyers are responsible for determining the price for their item when buyers may be willing to pay more.
 
 
 

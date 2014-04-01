@@ -38,7 +38,7 @@ View file in Google Drive -> File -> Make a copy...
 
 ## Future Funding 
 
-We did not account for the jump in revenue that would occur when FOBO enters a new market. Instead, we chose to quantify how long it would take to enter the San Franciso Bay market. Based on our model, it will cost FOBO approximately $500,000 to enter the San Francisco Bay market before reaching profitability in September. Thus, the most important conclusion from our model was the cost to enter a new market. 
+We did not account for the jump in revenue that would occur when FOBO enters a new market. Instead, we chose to quantify how long it would take to enter the San Francisco Bay market. Based on our model, it will cost FOBO approximately $500,000 to enter the San Francisco Bay market before reaching profitability in September. Thus, the most important conclusion from our model was the cost to enter a new market. 
 
-We assumed that this cost after launch to enter the San Francisco Bay market would be approximately equal for future markets. Thus, we predict that FOBO will raise an approximately $2 million Series A funding round before July at an $8 Million valuation. This money will fuel the expansion to four additional markets, which we predict are Austin, Los Angeles, Chicago, Seattle. 
+We assumed that this cost after launch to enter the San Francisco Bay market would be approximately equal for future markets. Thus, we predict that FOBO will raise an approximately $2 million Series A funding round before July at an $8 Million valuation. This money will fuel the expansion to four additional markets, which we predict will be Austin, Los Angeles, Chicago, Seattle. 
 
