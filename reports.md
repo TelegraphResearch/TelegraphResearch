@@ -4,7 +4,6 @@ title: Reports
 permalink: /reports/
 ---
 
-
 <table id="posts" class="table">
     <col class="width-30">
     <col class="width-70">
@@ -19,3 +18,5 @@ permalink: /reports/
         </tr>
     {% endfor %}
 </table>
+
+{% include signup.html %}
