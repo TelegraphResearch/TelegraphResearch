@@ -4,7 +4,7 @@ title: Reports
 permalink: /reports/
 ---
 
-<table id="posts" class="table">
+<table id="posts" class="table report-table">
     <col class="width-30">
     <col class="width-70">
     {% for post in site.posts %}
