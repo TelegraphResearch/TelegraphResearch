@@ -13,25 +13,6 @@ html {
      background-color: @home-background;
 }
 
-.sign-up {
-    position: absolute;
-    bottom: 275px;
-    background-color: @home-background;
-    width: 50%;
-    
-    .contain {
-        color: white !important;
-    }
-
-    h4 {
-        padding-left: 20px;
-        font-size: 130%;
-        margin-top: 7px;
-        margin-bottom: 7px;
-    }
-
-}
-
 .hello-box {
     position: absolute;
     bottom: 0px; /* How far from bottom */
@@ -53,25 +34,40 @@ html {
     }
 
     .social {
+
+        h4 {
+            font-size: 130%;
+        }
+
+        .sign-up {
+
+            margin-top: -5px;
+
+            .mailchimp-form {
+                max-width: 250px;
+                float: left;
+            }
+        }
+
         .social-container {
-            width: 100%;
-            float: right;
+            margin-right: 25px;
             img {
                 float: right;
                 max-height: 100%;
                 max-width: 50%;
                 display: inline;
                 height: 25px;
+                margin-top: 4px;
                 padding-left: 10px;
                 opacity: .88;
                 &:hover { opacity: 1; }
-
             }
         }
+
         .copyright {
-            text-align: right;
+            float: right;
+            margin-top: 10px;
             font-size: 80%;
-            margin-top: 55px;
             opacity: .7;
             a {
                 color: inherit;
