@@ -34,25 +34,47 @@ html {
     }
 
     .social {
+
+        h4 {
+            font-size: 130%;
+        }
+
+        .sign-up {
+
+            margin-top: 0px;
+
+            .mailchimp-form {
+                max-width: 268px;
+                float: left;
+                font-family: adelle;
+
+                .btn, .form-control {
+                    border-radius: 0;
+                    -webkit-border-radius: 0px;
+                    -moz-border-radius: 0px;
+                }
+            }
+        }
+
         .social-container {
-            width: 100%;
-            float: right;
+            margin-right: 10px;
             img {
                 float: right;
                 max-height: 100%;
                 max-width: 50%;
                 display: inline;
                 height: 25px;
+                margin-top: 4px;
                 padding-left: 10px;
                 opacity: .88;
                 &:hover { opacity: 1; }
-
             }
         }
+
         .copyright {
-            text-align: right;
+            float: right;
+            margin-top: 10px;
             font-size: 80%;
-            margin-top: 55px;
             opacity: .7;
             a {
                 color: inherit;
