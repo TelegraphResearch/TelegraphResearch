@@ -1,0 +1,27 @@
+s3_id: <%= ENV['s3_id'] %>
+s3_secret: <%= ENV['s3_secret'] %>
+s3_bucket: <%= ENV['s3_bucket'] %>
+
+<% if ENV['environment'] == 'production' %>
+max_age:
+   "assets/*": 6000
+   "*": 300
+
+gzip:
+   - .html
+   - .css
+   - .md
+
+
+cloudfront_distribution_id: <%= ENV['cloudfront_id'] %>
+
+cloudfront_distribution_config:
+  default_cache_behavior:
+    min_TTL: <%= 60 * 20 %>
+
+cloudfront_invalidate_root: true
+
+extensionless_mime_type: text/html
+
+<% end %>
+
