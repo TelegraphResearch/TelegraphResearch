@@ -1,0 +1,37 @@
+general:
+  branches:
+    only:
+      - master
+      - stage
+
+machine:
+  timezone:
+    America/Los_Angeles
+  ruby:
+    version:
+      2.1.1
+
+dependencies:
+  post:
+    - bundle exec jekyll build:
+        timeout: 300 # 10 min
+
+test:
+  override:
+    - echo "No tests are needed"
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - bash deploy.sh:
+          environment:
+            s3_bucket: www.telegraphresearch.com
+            environment: production
+  staging:
+    branch: stage
+    commands:
+      - bash deploy.sh:
+          environment:
+            s3_bucket: stage.telegraphresearch.com
+            environment: staging
