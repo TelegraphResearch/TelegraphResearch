@@ -74,6 +74,7 @@ GEM
     parslet (1.5.0)
       blankslate (~> 2.0)
     posix-spawn (0.3.8)
+    psych (2.0.5)
     pygments.rb (0.5.4)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.1.0)
@@ -125,6 +126,7 @@ DEPENDENCIES
   jekyll-press
   kramdown
   less
+  psych
   rdiscount
   s3_website
   therubyracer
