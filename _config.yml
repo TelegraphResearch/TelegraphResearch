@@ -1,7 +1,7 @@
-exclude:    ['README.md', '_jekyll_s3.yml', 's3_website.yml', 'Gemfile', 'Gemfile.lock', 'readme.md', '*.sh', 'vendor', '*.yml']
-markdown:   rdiscount
-pygments:   false
-permalink:  /:title
+exclude:        ['README.md', '_jekyll_s3.yml', 's3_website.yml', 'Gemfile', 'Gemfile.lock', 'readme.md', '*.sh', 'vendor', '*.yml']
+markdown:       rdiscount
+highlighter:    null
+permalink:      /:title
 
 # These are required for rss
 name:           Telegraph Research

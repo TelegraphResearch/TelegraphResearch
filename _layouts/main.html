@@ -17,6 +17,12 @@ layout: navigation
                     </ul>
                 </div>
             </div>
+            {% else if (page.category== 'Note') %}
+            <div class="sidebar panel panel-default hidden-xs ">
+                <div class="report-menu panel-body">
+                    {% include recent_reports.html %}
+                </div>
+            </div>
             {% endif %}
         </div>
     </div>

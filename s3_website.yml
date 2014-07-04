@@ -12,6 +12,8 @@ gzip:
    - .css
    - .md
 
+redirects:
+	reports: /articles/
 
 cloudfront_distribution_id: <%= ENV['cloudfront_id'] %>
 
