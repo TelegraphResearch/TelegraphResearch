@@ -2,6 +2,9 @@ s3_id: <%= ENV['s3_id'] %>
 s3_secret: <%= ENV['s3_secret'] %>
 s3_bucket: <%= ENV['s3_bucket'] %>
 
+redirects:
+    reports: /articles/
+
 <% if ENV['environment'] == 'production' %>
 max_age:
    "assets/*": 6000
@@ -11,9 +14,6 @@ gzip:
    - .html
    - .css
    - .md
-
-redirects:
-	reports: /articles/
 
 cloudfront_distribution_id: <%= ENV['cloudfront_id'] %>
 
