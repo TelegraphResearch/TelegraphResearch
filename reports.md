@@ -21,7 +21,12 @@ permalink: /articles/
             {% endif %}
             {% if post.category == "Note" %}
                 <td>
-                    <span class="label label-primary center-block category">{{ post.category }}</span>
+                    <span class="label label-default center-block category">{{ post.category }}</span>
+                </td>
+            {% endif %}
+            {% if post.category == "Analysis" %}
+                <td>
+                    <span class="label label-info center-block category">{{ post.category }}</span>
                 </td>
             {% endif %}
 
