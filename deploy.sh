@@ -23,4 +23,4 @@ do
 done
 
 # Push the build using the s3_website.yml settings
-bundle exec s3_website push --headless
+bundle exec s3_website push
