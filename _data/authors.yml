@@ -6,10 +6,12 @@
     linkedin:   'http://www.linkedin.com/pub/andrew-clayton-hess/20/83/4'
     image:      '/images/andrew.jpg'
     bio:        'Andrew is a software engineer at <a href="http://opendns.com">OpenDNS</a> and recent graduate of Washington University in St. Louis. He has conducted research in qunatitative finance and optimization systems. He previously worked on the technical due diligence team at <a href="http://cultivationcapital.com">Cultivation Capital</a>.'
+    key: andrew
 
 -   name:       Philip I. Thomas
     twitter:    philipithomas
-    url:        'https://www.philipithomas.com/resume'
+    url:        'https://www.philipithomas.com/'
     linkedin:   'http://linkedin.com/in/philipithomas'
     image:      '/images/philip.jpg'
     bio:        'Philip works as a software engineer at <a href="http://opendns.com">OpenDNS</a> in San Francisco. He majored in systems engineering and physics at Washington University in St. Louis. He worked on the technical due diligence team at <a href="http://cultivationcapital.com">Cultivation Capital</a>.'
+    key: philip
