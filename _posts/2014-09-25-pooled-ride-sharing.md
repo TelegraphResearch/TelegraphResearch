@@ -95,9 +95,9 @@ A vehicle is the entity that services a group. The fundamental difference betwee
 
 ### Variables
 * [Experimental] - Available for Pickup (boolean): Dedicated vheicles will be unavailable when containing one group. Pooled vehicles determine availability by the number of available seats compared to the size of a requesting group.
-* [Control] - Capacity: The number of seats; set at 3.
-* [Control] - Group Loading Time (seconds): The amount of time that a vehicle is idle while it loads or unloads people; values are randomly generated on a normal distribution.
-* [Control] - Group Pickup Time (seconds): The amount of time that a group must wait for an assigned vehicle to arrive; values are randomly generated on a normal distribution.
+* Capacity: The number of seats; set at 3.
+* Group Loading Time (seconds): The amount of time that a vehicle is idle while it loads or unloads people; values are randomly generated on a normal distribution.
+* Group Pickup Time (seconds): The amount of time that a group must wait for an assigned vehicle to arrive; values are randomly generated on a normal distribution.
 
 If a pooled vehicle has one group of size 1, it is still available to pick up one group of size 2, or two groups of size 1.
 
