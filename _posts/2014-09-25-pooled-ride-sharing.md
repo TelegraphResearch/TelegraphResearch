@@ -81,6 +81,10 @@ To understand how pooled ride sharing differs from dedicated ride sharing as a s
 
 The simulation has 2 different models that represent the two methods being compared: pooled and dedicated ride sharing. We based our pooled ride sharing simulation on the Hitch model where drivers continuously pick up and drop off passengers. The dedicated ride sharing model is based off the existing standard, where drivers service one group at a time.
 
+### System Variables
+Arrival Rate: The rate at which a new group enters the simulation. This is modeled as a binomial poisson distribution and determined by a variable lamda. At every second, a group has a given probability of being randomly generated.
+Vehicle Quantity: The number of vehicles that are allocated to a given model.
+
 ## Groups
 
 A group represents a set of people that are travelling together. For consistency in testing, every group is tested in both models to study how each model reacts to the same exact routes. The variables for a group are defined below:
@@ -144,8 +148,42 @@ Customers in the simulation have no personal value for their own time, yet alone
 * Groups do not have the ability to choose between a given service.
 * Pooled routes are perfectly efficient. In reality, some additional time is added from slight differences between routes.
 
-
 # Experiment
+
+The simulation can test all 4 hypotheses in just two phases.
+
+## Phase A: Equal Vehicles, Increasing Arrival Rate
+
+Phase A will study how each model performs under various loads and find an appropriate range of arrival rates for the steady-state.
+
+### Fixed Parameters
+* Simulation Time: 6 hours
+* Travel Time Avgerage: 15 minutes
+* Travel Time Standard Deviation: 3 minutes
+* Vehicle Loading Time Average: 3 minutes
+* Vehicle Loading Time Standard Deviation: 30 seconds
+* Number of Pooled Vehicles: 100
+* Number of Dedicatd Vehicles: 100
+
+### Variable Parameters
+* Arrival Rate: Increasing from 0.01 to 0.19 by 0.01 increments
+
+## Phase B: Steady Arrival Rate, Decreasing Vehicles
+
+From Phase A, we can find the highest arrival rate that is suitable for steady-state analysis. With that arrival rate, we can study how the pooled system performs with fewer vehicles.
+
+### Fixed Parameters
+* Simulation Time: 6 hours
+* Travel Time Avgerage: 15 minutes
+* Travel Time Standard Deviation: 3 minutes
+* Vehicle Loading Time Average: 3 minutes
+* Vehicle Loading Time Standard Deviation: 30 seconds
+* Number of Dedicatd Vehicles: 100
+* Arrival Rate: 0.06
+
+### Variable Parameters
+* Number of Pooled Vehicles: Decreasing from 100 to 49 by increments of 3
+
 
 # Analysis
 
