@@ -210,7 +210,7 @@ From Phase A, we can find the highest arrival rate that is suitable for steady-s
 <a href="/images/ridesharing/travel3-full.png"><img src="/images/ridesharing/travel3.png" alt="Average Group Time from Pickup to Destination in Dedicated Vehicles as a Function of Group Arrival Rate"/></a>
 <a href="/images/ridesharing/travel4-full.png"><img src="/images/ridesharing/travel4.png" alt="Average Group Time from Pickup to Destination as a Function of Group Arrival Rate"/></a>
 <a href="/images/ridesharing/travel5-full.png"><img src="/images/ridesharing/travel5.png" alt="Average Tiem from Group Spawn to Destination in Pooled Vehicles as a Function of Vehicle Quantity"/></a>
-<a href="/images/ridesharing/travel55-full.png"><img src="/images/ridesharing/travel55.png" alt="Average Group Time from Pickup to Destination in Pooled Vehicles as a Function of Vehicle Quantity"/></a>
+<a href="/images/ridesharing/travel6-full.png"><img src="/images/ridesharing/travel6.png" alt="Average Group Time from Pickup to Destination in Pooled Vehicles as a Function of Vehicle Quantity"/></a>
 <a href="/images/ridesharing/util-full.png"><img src="/images/ridesharing/util.png" alt="Average Vehicle Utilization as a Function of Group Arrival Rate"/></a>
 <a href="/images/ridesharing/util2-full.png"><img src="/images/ridesharing/util2.png" alt="Average Pooled Vehicle Utilization as a Function of Vehicle Quantity"/></a>
 
