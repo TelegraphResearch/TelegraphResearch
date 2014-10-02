@@ -6,6 +6,7 @@ Description: Data
 label: ridesharing
 category: Analysis
 authors: ['philip', 'andrew']
+latex: true
 ---
 
 
@@ -190,28 +191,54 @@ From Phase A, we can find the highest arrival rate that is suitable for steady-s
 
 # Conclusions
 
-## Hypothesis
+## Hypotheses
+
+### "Fewer drivers are able to service the same number of riders."
+
+We hypothesized that fewer vehicles are able to service the same number of riders. The main cost to ride sharing companies cost, so being able to transport more passengers with the same number of drivers means that costs decrease.
+
+To prove this hypothesis, we held the number of vehicles in the simulation constant at #TODO#. The arrival rate was then varied in order to determine the point at which the system became overloaded.
+
+To determine the point at which the system becomes overloaded, we looked for the point where passengers had to wait at least 5 minutes for a vehicle to be assigned to them - thus indicating that new passengers were arriving more quickly than they were being dropped off. In a real-world scenario, this is the point when dynamic pricing models ("surge" or "primetime") would increase cost in order to decrease the number of passengers calling a ride.
+
+<a href="/images/ridesharing/assignment-full.png"><img src="/images/ridesharing/assignment.png" alt="Average Time from Group Spawn to Driver Assignment as a Function of Group Arrival Rate"/></a>
+
+The arrival rate was measured as *lambda*, which represented the probability in a given second that a new group of passengers would spawn. Thus, the average hourly arrival rate is lambda times the seconds in an hour. 
+
+This model showed that dedicated ride sharing became overloaded between a lambda .06 and .07. Pooled ride sharing became overloaded between .11 and .12. Thus, the same number of drivers was able to service between 216 and 252 groups of passengers in a dedicated environment, and between 396 and 432 groups of passengers in a pooled environment. Because distribution of group sizes was the same between environments, we may conclude that a pooled environment may service the same number of riders with fewer drivers. Furthermore, we may conclude that within our simulation parameters, about half as many drivers may service the same arrival rate of passenger groups in a pooled environment versus a dedicated environment.
+
+TODO - explain this 
+
+<a href="/images/ridesharing/assignment2-full.png"><img src="/images/ridesharing/assignment2.png" alt="Average Time from Group Spawn to Driver Assignment in Pooled Vehicle Enviroment as a Function of Vehicle Quantity"/></a>
+
+If drivers pay is considered constant per hour, independent of mileage driven, then being able to service the same number of customers with half as many drivers cuts costs by about half. Thus Uber's assertion that their [pooled rides cost 40% less than dedicated rides](http://blog.uber.com/uberpool) substantiates our conclusion.
+
+
 
 ### "Pooled ride sharing has significantly higher driver utilization"
 
+We hypothesized that, relative to dedicated drivers, pooled drivers would not have to wait between calls to pick somebody up. Instead, by constantly picking up and dropping off groups of passengers, they would rarely have zero passengers. 
+
+To calculate the average driver utilization in a system, calculated the percentage of time that vehicles had one or more passengers assigned to that vehicle. Thus, an empty vehicle en route to pick up a passenger was considered utilized.
+
+<a href="/images/ridesharing/util-full.png"><img src="/images/ridesharing/util.png" alt="Average Vehicle Utilization as a Function of Group Arrival Rate"/></a>
+
+<a href="/images/ridesharing/util2-full.png"><img src="/images/ridesharing/util2.png" alt="Average Pooled Vehicle Utilization as a Function of Vehicle Quantity"/></a>
+
 ### "Pooled ride sharing takes longer for riders to arrive at the destination"
 
+<a href="/images/ridesharing/travel-full.png"><img src="/images/ridesharing/travel.png" alt="Average Time from Group Spawn to Destination as a Function of Group Arrival Rate"/></a>
+<a href="/images/ridesharing/travel2-full.png"><img src="/images/ridesharing/travel2.png" alt="Average Group Time from Pickup to Destination as a Function of Group Arrival Rate"/></a>
+<a href="/images/ridesharing/travel5-full.png"><img src="/images/ridesharing/travel5.png" alt="Average Time from Group Spawn to Destination in Pooled Vehicles as a Function of Vehicle Quantity"/></a>
+<a href="/images/ridesharing/travel6-full.png"><img src="/images/ridesharing/travel6.png" alt="Average Group Time from Pickup to Destination in Pooled Vehicles as a Function of Vehicle Quantity"/></a>
 ### "Pooled ride sharing is only efficient for one rider"
 
-### "Fewer drivers are able to service the same number of riders."
+<a href="/images/ridesharing/travel3-full.png"><img src="/images/ridesharing/travel3.png" alt="Average Group Time from Pickup to Destination in Dedicated Vehicles as a Function of Group Arrival Rate"/></a>
+<a href="/images/ridesharing/travel4-full.png"><img src="/images/ridesharing/travel4.png" alt="Average Group Time from Pickup to Destination as a Function of Group Arrival Rate"/></a>
+
 
 ## Pooled Ride Sharing Viability
 
 
-<a href="/images/ridesharing/assignment-full.png"><img src="/images/ridesharing/assignment.png" alt="Average Time from Group Spawn to Driver Assignment as a Function of Group Arrival Rate"/></a>
-<a href="/images/ridesharing/assignment2-full.png"><img src="/images/ridesharing/assignment2.png" alt="Average Time from Group Spawn to Driver Assignment in Pooled Vehicle Enviroment as a Function of Vehicle Quantity"/></a>
-<a href="/images/ridesharing/travel-full.png"><img src="/images/ridesharing/travel.png" alt="Average Tiem from Group Spawn to Destination as a Function of Group Arrival Rate"/></a>
-<a href="/images/ridesharing/travel2-full.png"><img src="/images/ridesharing/travel2.png" alt="Average Group Time from Pickup to Destination as a Function of Group Arrival Rate"/></a>
-<a href="/images/ridesharing/travel3-full.png"><img src="/images/ridesharing/travel3.png" alt="Average Group Time from Pickup to Destination in Dedicated Vehicles as a Function of Group Arrival Rate"/></a>
-<a href="/images/ridesharing/travel4-full.png"><img src="/images/ridesharing/travel4.png" alt="Average Group Time from Pickup to Destination as a Function of Group Arrival Rate"/></a>
-<a href="/images/ridesharing/travel5-full.png"><img src="/images/ridesharing/travel5.png" alt="Average Tiem from Group Spawn to Destination in Pooled Vehicles as a Function of Vehicle Quantity"/></a>
-<a href="/images/ridesharing/travel6-full.png"><img src="/images/ridesharing/travel6.png" alt="Average Group Time from Pickup to Destination in Pooled Vehicles as a Function of Vehicle Quantity"/></a>
-<a href="/images/ridesharing/util-full.png"><img src="/images/ridesharing/util.png" alt="Average Vehicle Utilization as a Function of Group Arrival Rate"/></a>
-<a href="/images/ridesharing/util2-full.png"><img src="/images/ridesharing/util2.png" alt="Average Pooled Vehicle Utilization as a Function of Vehicle Quantity"/></a>
 
 
