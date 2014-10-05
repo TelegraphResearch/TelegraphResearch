@@ -3,7 +3,7 @@ layout: note
 title: Quantitative Analysis of Pooled ridesharing
 shortTitle: ridesharing
 Description: Data
-label: ridesharing
+label: Ridesharing
 category: Analysis
 authors: ['philip', 'andrew']
 latex: true
@@ -18,9 +18,9 @@ Compared to traditional “dedicated” ridesharing where a customer commissions
 
 ### Hypotheses 
 
-1. Pooled ridesharing has significantly higher driver utilization
-2. Pooled ridesharing takes longer for riders to arrive at the destination
-3. Pooled ridesharing is only efficient for one rider
+1. Pooled ridesharing has significantly higher driver utilization.
+2. Pooled ridesharing takes longer for riders to arrive at the destination.
+3. Pooled ridesharing is only efficient for one rider.
 4. Fewer drivers are able to service the same number of riders.
 
 In order to validate these hypotheses and to evaluate the feasibility of pooled rides in the rideshare industry, Telegraph Research developed a simulation of pooled ridesharing. 
@@ -30,7 +30,7 @@ In order to validate these hypotheses and to evaluate the feasibility of pooled 
 </div>
 
 
-# Pooled ridesharing Basics
+# Pooled Ridesharing Basics
 
 ## Implementations
 The companies Hitch, Lyft, and Uber take slightly different approaches to a similar concept. 
@@ -41,18 +41,19 @@ Hitch was available in San Francisco through an iPhone app. Drivers are currentl
 Cars are treated like buses that continually pick up and drop off users between dynamically-routed locations. After picking up a rider, other passengers may be picked up or dropped off on the way to a destination. In this sense, a busy driver may never have an empty car. 
 
 ### Lyft Line
-Lyft Line is available in San Francisco. All standard Lyft drivers (excluding Lyft Premium) are eligible to be assigned pooled rides. Riders are given a strict 60 second window after the driver arrives to enter the car, and cars only pick up two parties of people. Riders are given guaranteed prices, and drivers are paid the combined fares of the parties. 
+Lyft Line is available in San Francisco. All standard Lyft drivers (excluding Lyft Premium) are eligible to be assigned pooled rides. Riders are given a strict 60 second window after the driver arrives to enter the car, and cars only pick up two groups of people. Riders are given guaranteed prices, and drivers are paid the combined fares of the parties. 
 
-Parties are paired based on similarities between their pickup location, destination, and travel route. In this sense, drivers are not dynamically routed, but are assigned a full route consisting of no more than two pickups and two dropoffs. 
+Groups are paired based on similarities between their pickup location, destination, and travel route. In this sense, drivers are not dynamically routed, but are assigned a full route consisting of no more than two pickups and two dropoffs. 
 
 ### Uber Pool
-Uber Pool is available in limited beta in the San Francisco Bay. All UberX drivers are eligible to be tasked Uber Pool fares. Uber pool strictly allows only parties of one person, and a maximum of two passengers are in an Uber Pool during the course of the ride. 
+Uber Pool is available in limited beta in the San Francisco Bay. All UberX drivers are eligible to be tasked Uber Pool fares. Uber Pool strictly allows only parties of one person, and a maximum of two passengers are in an Uber Pool during the course of the ride. 
 
-Riders are paired based on their pickup location and destination with another rider traveling a similar route. In this sense, drivers are not dynamically routed, but are assigned a full route consisting of no more than two pickups and two dropoffs. 
+Riders are paired based on their pickup location and destination with another rider traveling a similar route. Again, drivers are not dynamically routed, but are assigned a full route consisting of no more than two pickups and two dropoffs. 
+
 ## Advantages of Pooled Rides
-Traditional ridesharing apps do not charge based on the number of passengers. Instead they charge based on capacity, which generally is 3 riders for a standard car and 5 for a standard SUV. 
+Traditional ridesharing apps do not charge based on the number of passengers. Instead, they charge based on capacity, which generally is 3 riders for a standard car and 5 for a standard SUV. 
 
-For single riders, such as commuters, purchasing three seats of capacity for a trip is not financially efficient. For this reason, Uber introduced fare splitting to allow riders to split charges. 
+For single riders, such as commuters, purchasing three seats of capacity for a trip is not financially efficient. For this reason, [Uber introduced fare splitting to allow riders to split charges](http://blog.uber.com/2013/07/15/faresplit/). 
 
 By optimizing for single riders, costs decrease. However, ride time increases. 
 
@@ -72,9 +73,9 @@ Business riders, for example those traveling to airports, are less likely to be 
 
 Lyft has always promoted social rides by encouraging riders to sit in the front seat, fist bump drivers, and have a friendly conversation during the ride. 
 
-The Uber brand does not promote a social aspect, but they treat Uber Pool as a “Social experiment.” The brand originated as a premium service, and even in their cheaper UberX line drivers often act as chauffeurs. 
+The Uber brand does not promote a social aspect, but they treat Uber Pool as a [“Social experiment.”](http://blog.uber.com/uberpool) The brand originated as a premium service, and even in their cheaper UberX line drivers often act as chauffeurs. 
 
-This dichotomy in brands will become apparent in pooled ridesharing. If riders engage socially, it seems that the Lyft brand would encourage drivers to participate and hence make the ride more comfortable. It is unclear whether Uber encourages pool drivers to engage with customers.
+This dichotomy in brands will become apparent in pooled ridesharing. If riders engage socially, it seems that the Lyft brand would encourage drivers to participate and hence make the ride more comfortable. It is unclear whether Uber encourages Pool drivers to engage with customers.
 
 # Simulation
 
@@ -82,15 +83,16 @@ To understand how pooled ridesharing differs from dedicated ridesharing as a sys
 
 ## Model
 
-The simulation has 2 different models that represent the two methods being compared: pooled and dedicated ridesharing. We based our pooled ridesharing simulation on the Hitch model where drivers continuously pick up and drop off passengers. The dedicated ridesharing model is based off the existing standard, where drivers service one group at a time.
+The simulation has 2 different models that represent the two methods being compared: pooled and dedicated ridesharing. We based our pooled ridesharing simulation on the Hitch model where drivers continuously pick up and drop off passengers. The dedicated ridesharing model is based off of the existing standard, where drivers service one group at a time.
 
 ### System Variables
-Arrival Rate: The rate at which a new group enters the simulation. This is modeled as a binomial poisson distribution and determined by a variable lamda. At every second, a group has a given probability of being randomly generated.
-Vehicle Quantity: The number of vehicles that are allocated to a given model.
+
+* **Arrival Rate**: The rate at which a new group enters the simulation. This is modeled as a binomial poisson distribution and determined by a variable lamda. At every second, a group has a given probability of being randomly generated.
+* **Vehicle Quantity**: The number of vehicles that are allocated to a given model.
 
 ## Groups
 
-A group represents a set of people that are travelling together. For consistency in testing, every group is tested in both models to study how each model reacts to the same exact routes. The variables for a group are defined below:
+A group represents a set of people that are travelling together. In simulations, the same groups of the same size spawned in both models at the same time. The variables for a group are defined below:
 
 ### Variables
 * Size: 1 to 3 passengers. Upper bound of 3 is defined by the maximum capacity allowed for Hitch.
@@ -98,7 +100,17 @@ A group represents a set of people that are travelling together. For consistency
 
 ## Vehicles
 
-A vehicle is the entity that services a group. The fundamental difference between a pooled and dedicated ridesharing vehicle is what determines whether it is able to pick up a passenger. It will serve as the sole experimental variable for the simulation, while all others will remain constant. The variables for a vehicle are defined below:
+A vehicle is the entity that services a group. The fundamental difference between a pooled and dedicated ridesharing vehicle is what determines how many passengers it may pick up. It will serve as the sole experimental variable for the simulation, while all others will remain constant. The variables for a vehicle are defined below:
+
+<div class="alert alert-info">
+	<h3>Fundamental Model Difference</h3>
+	<ul>
+	<li>For <strong>dedicated ridesharing</strong>, a vehicle reports that it may pick up its full capacity if the car is empty, and it reports zero if it is non-empty.</li>
+	<li>For <strong>pooled ridesharing</strong>, a vehicle always reports that it is available to pick up its capacity minus the current number of passengers.
+	</li>
+	</ul>
+</div>
+
 
 ### Variables
 * [Experimental] - Available for Pickup (boolean): Dedicated vheicles will be unavailable when containing one group. Pooled vehicles determine availability by the number of available seats compared to the size of a requesting group.
