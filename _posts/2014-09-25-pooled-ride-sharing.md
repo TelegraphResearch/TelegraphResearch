@@ -1,7 +1,7 @@
 ---
 layout: note
-title: Quantitative Analysis of Pooled Ride Sharing
-shortTitle: Ride Sharing
+title: Quantitative Analysis of Pooled ridesharing
+shortTitle: ridesharing
 Description: Data
 label: ridesharing
 category: Analysis
@@ -10,25 +10,27 @@ latex: true
 ---
 
 
-In the past few months, pooled transportation options have emerged in the multi-billion dollar ride sharing industry. Pooled ride sharing fills a niche between taxis and buses where riders can get low-priced, door-to-door transportation by sharing a vehicle with strangers traveling along a similar route. 
+In the past few months, pooled transportation options have emerged in the multi-billion dollar ridesharing industry. Pooled ridesharing fills a niche between taxis and buses where riders can get low-priced, door-to-door transportation by sharing a vehicle with strangers traveling along a similar route. 
 
-Ride share company Sidecar [was the first to market with pooled ride sharing in May](http://techcrunch.com/2014/06/29/sidecar-shareable-rides/). The company that originally caught our attention in the area was [Hitch](http://www.takehitch.com/), a ride sharing company focused solely on pooled rides. Since Hitch’s [launch in June](http://techcrunch.com/2014/06/11/hitch-ride-share/), both ride share giants Lyft and Uber have implemented test programs for pooled ride sharing using their existing driver bases in the San francisco Bay area. 
+Rideshare company Sidecar [was the first to market with pooled ridesharing in May](http://techcrunch.com/2014/06/29/sidecar-shareable-rides/). The company that originally caught our attention in the area was [Hitch](http://www.takehitch.com/), a ridesharing company focused solely on pooled rides. Since Hitch’s [launch in June](http://techcrunch.com/2014/06/11/hitch-ride-share/), both rideshare giants Lyft and Uber have implemented test programs for pooled ridesharing using their existing driver bases in the San Francisco Bay area. 
 
-Compared to traditional “dedicated” ride sharing where a customer commissions a full vehicle, Telegraph Research sought to quantify four hypotheses about pooled ride sharing.
+Compared to traditional “dedicated” ridesharing where a customer commissions a full vehicle, Telegraph Research sought to quantify four hypotheses about pooled ridesharing.
 
-1. **Hypothesis** - Pooled ride sharing has significantly higher driver utilization
-2. **Hypothesis** - Pooled ride sharing takes longer for riders to arrive at the destination
-3. **Hypothesis** - Pooled ride sharing is only efficient for one rider
-4. **Hypothesis** - Fewer drivers are able to service the same number of riders.
+### Hypotheses 
 
-In order to validate these hypotheses and to evaluate the feasibility of pooled rides in the ride share industry, Telegraph Research developed a simulation of pooled ride sharing. 
+1. Pooled ridesharing has significantly higher driver utilization
+2. Pooled ridesharing takes longer for riders to arrive at the destination
+3. Pooled ridesharing is only efficient for one rider
+4. Fewer drivers are able to service the same number of riders.
+
+In order to validate these hypotheses and to evaluate the feasibility of pooled rides in the rideshare industry, Telegraph Research developed a simulation of pooled ridesharing. 
 
 <div class="alert alert-warning">
     During publication, it was announced that <a href="http://blog.lyft.com/posts/2014/9/22/lyft-acquires-hitch-to-accelerate-lyft-line-expansion">Lyft had acquired Hitch.</a>.
 </div>
 
 
-# Pooled Ride Sharing Basics
+# Pooled ridesharing Basics
 
 ## Implementations
 The companies Hitch, Lyft, and Uber take slightly different approaches to a similar concept. 
@@ -48,7 +50,7 @@ Uber Pool is available in limited beta in the San Francisco Bay. All UberX drive
 
 Riders are paired based on their pickup location and destination with another rider traveling a similar route. In this sense, drivers are not dynamically routed, but are assigned a full route consisting of no more than two pickups and two dropoffs. 
 ## Advantages of Pooled Rides
-Traditional ride sharing apps do not charge based on the number of passengers. Instead they charge based on capacity, which generally is 3 riders for a standard car and 5 for a standard SUV. 
+Traditional ridesharing apps do not charge based on the number of passengers. Instead they charge based on capacity, which generally is 3 riders for a standard car and 5 for a standard SUV. 
 
 For single riders, such as commuters, purchasing three seats of capacity for a trip is not financially efficient. For this reason, Uber introduced fare splitting to allow riders to split charges. 
 
@@ -57,14 +59,14 @@ By optimizing for single riders, costs decrease. However, ride time increases.
 ## Niche
 It is not uncommon to see pooled rides cost between $3 and $5 for door-to-door service in an urban environment, compared to comparable $6 to $8 for a dedicated car. One-way transit on public transit costs about $2 (SF Muni). 
 
-Compared to public transportation, pooled ride shares are typically faster due to fewer stops and more comfortable due to fewer passengers. However, arrival time is less predictable - buses run on precise time schedules; ride shares make no estimates about arrival time. 
+Compared to public transportation, pooled rideshares are typically faster due to fewer stops and more comfortable due to fewer passengers. However, arrival time is less predictable - buses run on precise time schedules; rideshares make no estimates about arrival time. 
 
 ## Opportunity
-Due to the low price, pooled ride sharing becomes more feasible for commuters and thus more directly competes with public transportation. Attracting commuters brings recurring revenue, and hence will likely drive the growth of pooled ride sharing.
+Due to the low price, pooled ridesharing becomes more feasible for commuters and thus more directly competes with public transportation. Attracting commuters brings recurring revenue, and hence will likely drive the growth of pooled ridesharing.
 
-Pooled ride sharing primarily works in urban environments where fewer customers own cars or where parking is a significant expense. 
+Pooled ridesharing primarily works in urban environments where fewer customers own cars or where parking is a significant expense. 
 
-Business riders, for example those traveling to airports, are less likely to be cost-sensitive if they plan to expense the ride. Hence, they are unlikely to use pooled ride sharing. 
+Business riders, for example those traveling to airports, are less likely to be cost-sensitive if they plan to expense the ride. Hence, they are unlikely to use pooled ridesharing. 
 
 ## Brand and Culture
 
@@ -72,15 +74,15 @@ Lyft has always promoted social rides by encouraging riders to sit in the front 
 
 The Uber brand does not promote a social aspect, but they treat Uber Pool as a “Social experiment.” The brand originated as a premium service, and even in their cheaper UberX line drivers often act as chauffeurs. 
 
-This dichotomy in brands will become apparent in pooled ride sharing. If riders engage socially, it seems that the Lyft brand would encourage drivers to participate and hence make the ride more comfortable. It is unclear whether Uber encourages pool drivers to engage with customers.
+This dichotomy in brands will become apparent in pooled ridesharing. If riders engage socially, it seems that the Lyft brand would encourage drivers to participate and hence make the ride more comfortable. It is unclear whether Uber encourages pool drivers to engage with customers.
 
 # Simulation
 
-To understand how pooled ride sharing differs from dedicated ride sharing as a system, we built a simulation in Python to analyze travel metrics between the two methodologies. The code is [available on Github](https://github.com/telegraphresearch/vehicle-sim).
+To understand how pooled ridesharing differs from dedicated ridesharing as a system, we built a simulation in Python to analyze travel metrics between the two methodologies. The code is [available on Github](https://github.com/telegraphresearch/vehicle-sim).
 
 ## Model
 
-The simulation has 2 different models that represent the two methods being compared: pooled and dedicated ride sharing. We based our pooled ride sharing simulation on the Hitch model where drivers continuously pick up and drop off passengers. The dedicated ride sharing model is based off the existing standard, where drivers service one group at a time.
+The simulation has 2 different models that represent the two methods being compared: pooled and dedicated ridesharing. We based our pooled ridesharing simulation on the Hitch model where drivers continuously pick up and drop off passengers. The dedicated ridesharing model is based off the existing standard, where drivers service one group at a time.
 
 ### System Variables
 Arrival Rate: The rate at which a new group enters the simulation. This is modeled as a binomial poisson distribution and determined by a variable lamda. At every second, a group has a given probability of being randomly generated.
@@ -96,7 +98,7 @@ A group represents a set of people that are travelling together. For consistency
 
 ## Vehicles
 
-A vehicle is the entity that services a group. The fundamental difference between a pooled and dedicated ride sharing vehicle is what determines whether it is able to pick up a passenger. It will serve as the sole experimental variable for the simulation, while all others will remain constant. The variables for a vehicle are defined below:
+A vehicle is the entity that services a group. The fundamental difference between a pooled and dedicated ridesharing vehicle is what determines whether it is able to pick up a passenger. It will serve as the sole experimental variable for the simulation, while all others will remain constant. The variables for a vehicle are defined below:
 
 ### Variables
 * [Experimental] - Available for Pickup (boolean): Dedicated vheicles will be unavailable when containing one group. Pooled vehicles determine availability by the number of available seats compared to the size of a requesting group.
@@ -110,15 +112,15 @@ Values for Group Pickup Time vary based on the location of the vehicle when it i
 
 ## Steady-State Modeling
 
-Using the defined group and vehicle, the simulation can be used to effectively model pooled and dedicated ride sharing services in the steady-state. Under these conditions, there must be a steady, constant supply of both groups and vehicles, with assignments occuring within an expected range of values. Deliberately incorporating actual routes into each group’s trip was not necessary and instead, the group’s Travel Time can be used to represent distance travelled.
+Using the defined group and vehicle, the simulation can be used to effectively model pooled and dedicated ridesharing services in the steady-state. Under these conditions, there must be a steady, constant supply of both groups and vehicles, with assignments occuring within an expected range of values. Deliberately incorporating actual routes into each group’s trip was not necessary and instead, the group’s Travel Time can be used to represent distance travelled.
 
 ## Modeling Distance as Time
 
-Once a group is picked up, the its Travel Time is decremented for each second that the vehicle is underway. A dedicated ride sharing vehicle will constantly decrement time until it reaches 0, at which point it is at the destination. A pooled vehicle will also also decrement time while it travels, but it is susceptible to time penalties from other groups. These time penalties correspond to the loading times for adding and removing groups because the vehicle is idle during that time.
+Once a group is picked up, the its Travel Time is decremented for each second that the vehicle is underway. A dedicated ridesharing vehicle will constantly decrement time until it reaches 0, at which point it is at the destination. A pooled vehicle will also also decrement time while it travels, but it is susceptible to time penalties from other groups. These time penalties correspond to the loading times for adding and removing groups because the vehicle is idle during that time.
 
 ## A Long, Long Road
 
-With the added simplifications, the simulation can be pictured as a straight, infinite, one-way road along which vehicles travel at a constant speed. Groups appear along the side of it and request to be carried down the road to a certain point. A group is assigned to the closest available vehicle; for dedicated ride sharing this vehicle will be empty, but it may be partially occupied for pooled. Dedicated vehicles will then drive until the group has reached its destination, but pooled vehicles will occasionally stop to add or drop off other groups, which adds a time penalty from the additional loading time.
+With the added simplifications, the simulation can be pictured as a straight, infinite, one-way road along which vehicles travel at a constant speed. Groups appear along the side of it and request to be carried down the road to a certain point. A group is assigned to the closest available vehicle; for dedicated ridesharing this vehicle will be empty, but it may be partially occupied for pooled. Dedicated vehicles will then drive until the group has reached its destination, but pooled vehicles will occasionally stop to add or drop off other groups, which adds a time penalty from the additional loading time.
 
 ## Loading Time
 
@@ -128,13 +130,13 @@ Loading time represents all time spent by a vehicle while it idles for passenger
 
 ### Only in Steady-State
 
-This model can only simulate ride sharing in the steady-state, meaning it should not be used to study underloaded or overloaded cases.
+This model can only simulate ridesharing in the steady-state, meaning it should not be used to study underloaded or overloaded cases.
 
 #### Underlaoded Case
 An underloaded case can occur in the simulation because the number of vehicles is always constant. In a real scenario, a low demand for rides would naturally cause fewer drivers to be willing to stay in service.
 
 #### Overloaded Case
-Neither the simulation or real services have an infinite supply of vehicles, so each can experience an arrival rate too high to service. Ride sharing services solved this problem with dynamic pricing. By raising prices at higher demand, fewer customers will be inclined to pay, thus bringing the arrival rate back to a sustainable level. The simulation does not implement pricing, and thus has no way to limit the arrival of customers.
+Neither the simulation or real services have an infinite supply of vehicles, so each can experience an arrival rate too high to service. ridesharing services solved this problem with dynamic pricing. By raising prices at higher demand, fewer customers will be inclined to pay, thus bringing the arrival rate back to a sustainable level. The simulation does not implement pricing, and thus has no way to limit the arrival of customers.
 
 ### Constant Variables
 
@@ -195,7 +197,7 @@ From Phase A, we can find the highest arrival rate that is suitable for steady-s
 
 ### "Fewer drivers are able to service the same number of riders."
 
-We hypothesized that fewer vehicles are able to service the same number of riders. The main cost to ride sharing companies cost, so being able to transport more passengers with the same number of drivers means that costs decrease.
+We hypothesized that fewer vehicles are able to service the same number of riders. The main cost to ridesharing companies cost, so being able to transport more passengers with the same number of drivers means that costs decrease.
 
 To prove this hypothesis, we held the number of vehicles in the simulation constant at #TODO#. The arrival rate was then varied in order to determine the point at which the system became overloaded.
 
@@ -205,7 +207,7 @@ To determine the point at which the system becomes overloaded, we looked for the
 
 The arrival rate was measured as *lambda*, which represented the probability in a given second that a new group of passengers would spawn. Thus, the average hourly arrival rate is lambda times the seconds in an hour. 
 
-This model showed that dedicated ride sharing became overloaded between a lambda .06 and .07. Pooled ride sharing became overloaded between .11 and .12. Thus, the same number of drivers was able to service between 216 and 252 groups of passengers in a dedicated environment, and between 396 and 432 groups of passengers in a pooled environment. Because distribution of group sizes was the same between environments, we may conclude that a pooled environment may service the same number of riders with fewer drivers. Furthermore, we may conclude that within our simulation parameters, about half as many drivers may service the same arrival rate of passenger groups in a pooled environment versus a dedicated environment.
+This model showed that dedicated ridesharing became overloaded between a lambda .06 and .07. Pooled ridesharing became overloaded between .11 and .12. Thus, the same number of drivers was able to service between 216 and 252 groups of passengers in a dedicated environment, and between 396 and 432 groups of passengers in a pooled environment. Because distribution of group sizes was the same between environments, we may conclude that a pooled environment may service the same number of riders with fewer drivers. Furthermore, we may conclude that within our simulation parameters, about half as many drivers may service the same arrival rate of passenger groups in a pooled environment versus a dedicated environment.
 
 TODO - explain this 
 
@@ -215,7 +217,7 @@ If drivers pay is considered constant per hour, independent of mileage driven, t
 
 
 
-### "Pooled ride sharing has significantly higher driver utilization"
+### "Pooled ridesharing has significantly higher driver utilization"
 
 We hypothesized that, relative to dedicated drivers, pooled drivers would not have to wait between calls to pick somebody up. Instead, by constantly picking up and dropping off groups of passengers, they would rarely have zero passengers. 
 
@@ -225,19 +227,19 @@ To calculate the average driver utilization in a system, calculated the percenta
 
 <a href="/images/ridesharing/util2-full.png"><img src="/images/ridesharing/util2.png" alt="Average Pooled Vehicle Utilization as a Function of Vehicle Quantity"/></a>
 
-### "Pooled ride sharing takes longer for riders to arrive at the destination"
+### "Pooled ridesharing takes longer for riders to arrive at the destination"
 
 <a href="/images/ridesharing/travel-full.png"><img src="/images/ridesharing/travel.png" alt="Average Time from Group Spawn to Destination as a Function of Group Arrival Rate"/></a>
 <a href="/images/ridesharing/travel2-full.png"><img src="/images/ridesharing/travel2.png" alt="Average Group Time from Pickup to Destination as a Function of Group Arrival Rate"/></a>
 <a href="/images/ridesharing/travel5-full.png"><img src="/images/ridesharing/travel5.png" alt="Average Time from Group Spawn to Destination in Pooled Vehicles as a Function of Vehicle Quantity"/></a>
 <a href="/images/ridesharing/travel6-full.png"><img src="/images/ridesharing/travel6.png" alt="Average Group Time from Pickup to Destination in Pooled Vehicles as a Function of Vehicle Quantity"/></a>
-### "Pooled ride sharing is only efficient for one rider"
+### "Pooled ridesharing is only efficient for one rider"
 
 <a href="/images/ridesharing/travel3-full.png"><img src="/images/ridesharing/travel3.png" alt="Average Group Time from Pickup to Destination in Dedicated Vehicles as a Function of Group Arrival Rate"/></a>
 <a href="/images/ridesharing/travel4-full.png"><img src="/images/ridesharing/travel4.png" alt="Average Group Time from Pickup to Destination as a Function of Group Arrival Rate"/></a>
 
 
-## Pooled Ride Sharing Viability
+## Pooled ridesharing Viability
 
 
 
