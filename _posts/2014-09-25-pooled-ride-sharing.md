@@ -186,6 +186,7 @@ Phase A will study how each model performs under various loads and find an appro
 * Vehicle Loading Time Standard Deviation: 30 seconds
 * Number of Pooled Vehicles: 100
 * Number of Dedicatd Vehicles: 100
+* Group Size Distribution: 1 Passenger: 70%, 2 Passengers: 29%, 3 Passengers: 1%.
 
 ### Variable Parameters
 * Arrival Rate: Increasing from 0.01 to 0.19 by 0.01 increments
@@ -202,6 +203,7 @@ From Phase A, we can find the highest arrival rate that is suitable for steady-s
 * Vehicle Loading Time Standard Deviation: 30 seconds
 * Number of Dedicatd Vehicles: 100
 * Arrival Rate: 0.06
+* Group Size Distribution: 1 Passenger: 70%, 2 Passengers: 29%, 3 Passengers: 1%.
 
 ### Variable Parameters
 * Number of Pooled Vehicles: Decreasing from 100 to 49 by increments of 3
