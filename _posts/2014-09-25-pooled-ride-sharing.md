@@ -276,10 +276,13 @@ The model shows that a pooled rideshare travel time for a single passenger is 35
 Thus, the conclusion from this data is that our interpretation of the Hitch model of ridesharing can take significantly longer for single riders. This lends credence to the formulations by Uber and Lyft where, rather than continuously dropping off and picking up riders, it may be fairer to single riders to limit the number of other groups that may share their ride. 
 
 
-## Pooled ridesharing Viability
+## Conclusions
 
+1. Pooled ridesharing is cheaper because a driver can transport about twice as many passengers in a given period as in a dedicated model. 
 
+2. Thee Hitch model of ridesharing takes about a third longer to arrive for single groups. If the target audience is single riders, then reformulating the pickup model to limit the number of co-riders may be beneficial. 
 
+3. Pooled ride sharing is a cheaper option due to higher throughput, not due to higher driver utilization. 
 
 
 
