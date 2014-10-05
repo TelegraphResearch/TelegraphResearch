@@ -12,9 +12,7 @@ layout: navigation
             {% if (page.report_menu == 'true') %}
             <div class="sidebar panel panel-default hidden-xs ">
                 <div class="report-menu panel-body">
-                    <ul class="nav nav-pills nav-stacked">
-                        {% include report_menu.html %}
-                    </ul>
+                    {% include report_menu.html %}
                 </div>
             </div>
             {% else %}
