@@ -219,7 +219,7 @@ We hypothesized that fewer vehicles are able to service the same number of rider
 
 To prove this hypothesis, we held the number of vehicles in the simulation constant at 100. The arrival rate was then varied in order to determine the point at which the system became overloaded.
 
-To determine the point at which the system becomes overloaded, we looked for the point where passengers had to wait at least 5 minutes for a vehicle to be assigned to them - thus indicating that new passengers were arriving more quickly than they were being dropped off. In a real-world scenario, this is the point when dynamic pricing models ("surge" or "primetime") would increase cost in order to decrease the number of passengers calling a ride.
+To determine the point at which the system exceeds its equilibrium and becomes overloaded, we looked for the point where passengers had to wait at least 5 minutes for a vehicle to be assigned to them - thus indicating that new passengers were arriving more quickly than they were being dropped off. In a real-world scenario, this is the point when dynamic pricing models ("surge" or "primetime") would increase cost in order to decrease the number of passengers calling a ride.
 
 <a href="/images/ridesharing/assignment-full.png"><img src="/images/ridesharing/assignment.png" alt="Average Time from Group Spawn to Driver Assignment as a Function of Group Arrival Rate"/></a>
 
@@ -227,39 +227,58 @@ The arrival rate was measured as *lambda*, which represented the probability in 
 
 This model showed that dedicated ridesharing became overloaded between a lambda .06 and .07. Pooled ridesharing became overloaded between .11 and .12. Thus, the same number of drivers was able to service between 216 and 252 groups of passengers in a dedicated environment, and between 396 and 432 groups of passengers in a pooled environment. Because distribution of group sizes was the same between environments, we conclude that a pooled environment may service the same number of riders with fewer drivers. Furthermore, we conclude that, within our simulation parameters, about half as many drivers may service the same arrival rate of passenger groups in a pooled environment versus a dedicated environment.
 
-If drivers' pay is considered constant per hour, independent of distance driven, then being able to service the same number of customers with half as many drivers cuts costs by about half. Thus Uber's assertion that their [pooled rides cost 40% less than dedicated rides](http://blog.uber.com/uberpool) substantiates our conclusion.
-
-
-TODO - explain this 
+To further quantify how many fewer drivers were necessary, we quantified how many pooled vehicles were necessary to service passengers at the equilibrium arrival rate of dedicated ridesharing. With lambda set to .06, the dedicated ridesharing equilbrium for 100 vehicles, we found that 52 pooled drivers could service the same arrival of groups with less than 5 minutes of wait time from spawn to driver assignment - 48% fewer drivers.
 
 <a href="/images/ridesharing/assignment2-full.png"><img src="/images/ridesharing/assignment2.png" alt="Average Time from Group Spawn to Driver Assignment in Pooled Vehicle Enviroment as a Function of Vehicle Quantity"/></a>
 
 
+If drivers' pay is considered constant per hour, independent of distance driven, then being able to service the same number of customers with half as many drivers cuts costs by about half. Thus Uber's assertion that their [pooled rides cost 40% less than dedicated rides](http://blog.uber.com/uberpool) substantiates our conclusion.
 
 
 ### "Pooled ridesharing has significantly higher driver utilization"
 
-We hypothesized that, relative to dedicated drivers, pooled drivers would not have to wait between calls to pick somebody up. Instead, by constantly picking up and dropping off groups of passengers, they would rarely have zero passengers. 
+We hypothesized that, relative to dedicated drivers, pooled drivers would not have to wait between calls to pick somebody up. Instead, by constantly picking up and dropping off groups of passengers, they would rarely have an empty car. 
 
-To calculate the average driver utilization in a system, calculated the percentage of time that vehicles had one or more passengers assigned to that vehicle. Thus, an empty vehicle en route to pick up a passenger was considered utilized.
+To determine the average driver utilization in a system, calculated the percentage of time that vehicles was in a "billable" state - either driving with passengers in the car, or already having passengers in the vehicle while picking up or dropping off. Thus, an empty vehicle en route to pick up a passenger was considered unutilized even though it was not idle.
 
 <a href="/images/ridesharing/util-full.png"><img src="/images/ridesharing/util.png" alt="Average Vehicle Utilization as a Function of Group Arrival Rate"/></a>
 
-<a href="/images/ridesharing/util2-full.png"><img src="/images/ridesharing/util2.png" alt="Average Pooled Vehicle Utilization as a Function of Vehicle Quantity"/></a>
+Our model showed that, at the equilbrium points for each model, driver utilization was approximately equal. This refuted our hypothesis by showing that pooled ridesharing, at a high arrival rate, does not increase the number of billable hours for a driver.
+
+ 
 
 ### "Pooled ridesharing takes longer for riders to arrive at the destination"
 
-<a href="/images/ridesharing/travel-full.png"><img src="/images/ridesharing/travel.png" alt="Average Time from Group Spawn to Destination as a Function of Group Arrival Rate"/></a>
+If the vehicle has to pause to pick up and drop off other passengers, then the ride time increases. To determine how much longer a pooled ride would take relative to a dedicated ride, we analyzed the travel time of groups in the models.
+
 <a href="/images/ridesharing/travel2-full.png"><img src="/images/ridesharing/travel2.png" alt="Average Group Time from Pickup to Destination as a Function of Group Arrival Rate"/></a>
-<a href="/images/ridesharing/travel5-full.png"><img src="/images/ridesharing/travel5.png" alt="Average Time from Group Spawn to Destination in Pooled Vehicles as a Function of Vehicle Quantity"/></a>
-<a href="/images/ridesharing/travel6-full.png"><img src="/images/ridesharing/travel6.png" alt="Average Group Time from Pickup to Destination in Pooled Vehicles as a Function of Vehicle Quantity"/></a>
+
+This graph shows that, in general, pooled rides take longer than dedicated rides. The points of best comparison are the equilibrium arrival rates of .06 and .11 for dedicated and pooled, respectively. Thus, at the equilbrium point the travel time increases by about 27% - or 7 minutes longer than an average travel time of 18 minutes in our model.
+
+When comparing the range of total travel times for pooled versus dedicated vehicles, pooled vehicle travel times are highly inconsistent, and thus could take considerably longer than a dedicated ride in some cases.
+
+
 ### "Pooled ridesharing is only efficient for one rider"
 
+Hitch allowed groups of up to 3 people to be transported. Because a group of 3 in a pooled ride environment functionally becomes a dedicated car, we did not expect a differerent transportation time for a group of three people in pooled versus dedicated. However, we wished to determine how groups of two passengers compared in travel time to groups of one passenger. 
+
+First, it is important to establish that dedicated rideshare travel time is essentially invariable between the sizes of groups. Based on our group size distribution, fewer data points were available for groups of 3 passengers, thus increasing the noise. 
+
 <a href="/images/ridesharing/travel3-full.png"><img src="/images/ridesharing/travel3.png" alt="Average Group Time from Pickup to Destination in Dedicated Vehicles as a Function of Group Arrival Rate"/></a>
+
+When comparing the travel times of pooled versus dedicated vehicles at an arrival rate equal to the equilibrium point for the model, we sought to segement the average travel increase time of 27%  between groups of one and two riders. 
+
 <a href="/images/ridesharing/travel4-full.png"><img src="/images/ridesharing/travel4.png" alt="Average Group Time from Pickup to Destination as a Function of Group Arrival Rate"/></a>
+
+The model shows that a pooled rideshare travel time for a single passenger is 35% longer than dedicated ride, and 18% longer for a group of two passengers. This drastic difference means that groups of more than one passenger essentially get priority in our formulation of the Hitch model because the vehicle lacks the available space to pick up as many accompanying passengers.
+
+
+Thus, the conclusion from this data is that our interpretation of the Hitch model of ridesharing can take significantly longer for single riders. This lends credence to the formulations by Uber and Lyft where, rather than continuously dropping off and picking up riders, it may be fairer to single riders to limit the number of other groups that may share their ride. 
 
 
 ## Pooled ridesharing Viability
+
+
 
 
 
