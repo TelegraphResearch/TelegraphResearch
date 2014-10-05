@@ -1,9 +1,9 @@
 ---
 layout: note
 title: Quantitative Analysis of Pooled ridesharing
-shortTitle: ridesharing
+shortTitle: Ridesharing
 Description: Data
-label: Ridesharing
+label: ridesharing
 category: Analysis
 authors: ['philip', 'andrew']
 latex: true
@@ -126,17 +126,24 @@ Values for Group Pickup Time vary based on the location of the vehicle when it i
 
 Using the defined group and vehicle, the simulation can be used to effectively model pooled and dedicated ridesharing services in the steady-state. Under these conditions, there must be a steady, constant supply of both groups and vehicles, with assignments occuring within an expected range of values. Deliberately incorporating actual routes into each group’s trip was not necessary and instead, the group’s Travel Time can be used to represent distance travelled.
 
+TODO: "warming up" of data. 6 hours plus 1 hour of warm-up
+
 ## Modeling Distance as Time
 
-Once a group is picked up, the its Travel Time is decremented for each second that the vehicle is underway. A dedicated ridesharing vehicle will constantly decrement time until it reaches 0, at which point it is at the destination. A pooled vehicle will also also decrement time while it travels, but it is susceptible to time penalties from other groups. These time penalties correspond to the loading times for adding and removing groups because the vehicle is idle during that time.
+Once a group is picked up, its Travel Time is decremented for each second that the vehicle is underway. A dedicated ridesharing vehicle will constantly decrement time until it reaches 0, at which point it is at the destination. A pooled vehicle will also also decrement time while it travels, but it is susceptible to time penalties from other groups. These time penalties correspond to the loading times for adding and removing groups because the vehicle is idle during that time.
 
-## A Long, Long Road
+## A Infinite, Straight Road
 
-With the added simplifications, the simulation can be pictured as a straight, infinite, one-way road along which vehicles travel at a constant speed. Groups appear along the side of it and request to be carried down the road to a certain point. A group is assigned to the closest available vehicle; for dedicated ridesharing this vehicle will be empty, but it may be partially occupied for pooled. Dedicated vehicles will then drive until the group has reached its destination, but pooled vehicles will occasionally stop to add or drop off other groups, which adds a time penalty from the additional loading time.
+With the added simplifications, the simulation can be pictured as a straight, infinite, one-way road along which vehicles travel at a constant speed. Groups appear along the side of it and request to be carried down the road to a certain point. 
+
+TODO - this is wrong:
+
+ A group is assigned to the closest available vehicle; for dedicated ridesharing this vehicle will be empty, but it may be partially occupied for pooled. Dedicated vehicles will then drive until the group has reached its destination, but pooled vehicles will occasionally stop to add or drop off other groups, which adds a time penalty from the additional loading time.
 
 ## Loading Time
 
-Loading time represents all time spent by a vehicle while it idles for passengers to load or unload. A vehicle always receives the full penalty, but it is applied differently to groups. A group incurs the full time penalty for any pickup or dropoff that is not its own. This is like waiting while a bus drops passengers off at another stop. A slow passenger will make your trip longer. For pickups and dropoffs where the group is involved, we only applied the penalty to the pickup. This is to help account for some of the factors that affect the vehicle but not the group. It is not a perfect abstraction, but is good enough.
+Loading time represents all time spent by a vehicle while it idles for passengers to load or unload. A vehicle always receives the full penalty, but it is applied differently to groups. A group incurs the full time penalty for any pickup or dropoff that is not its own. This is like waiting while a bus drops passengers off at another stop. A slow passenger will make your trip longer. For pickups and dropoffs where the group is involved, we only applied the penalty to the pickup. This is to help account for some of the factors that affect the vehicle but not the group. 
+
 
 ## Limitations
 
@@ -144,11 +151,11 @@ Loading time represents all time spent by a vehicle while it idles for passenger
 
 This model can only simulate ridesharing in the steady-state, meaning it should not be used to study underloaded or overloaded cases.
 
-#### Underlaoded Case
+#### Underloaded Case
 An underloaded case can occur in the simulation because the number of vehicles is always constant. In a real scenario, a low demand for rides would naturally cause fewer drivers to be willing to stay in service.
 
 #### Overloaded Case
-Neither the simulation or real services have an infinite supply of vehicles, so each can experience an arrival rate too high to service. ridesharing services solved this problem with dynamic pricing. By raising prices at higher demand, fewer customers will be inclined to pay, thus bringing the arrival rate back to a sustainable level. The simulation does not implement pricing, and thus has no way to limit the arrival of customers.
+Neither the simulation or real services have an infinite supply of vehicles, so each can experience an arrival rate too high to service. Ridesharing services solved this problem with dynamic pricing. By raising prices at higher demand, fewer customers will be inclined to pay, thus bringing the arrival rate back to a sustainable level. The simulation does not implement pricing, and thus has no way to limit the arrival of customers.
 
 ### Constant Variables
 
@@ -165,7 +172,7 @@ Customers in the simulation have no personal value for their own time, yet alone
 
 # Experiment
 
-The simulation can test all 4 hypotheses in just two phases.
+The hypotheses were tested by collecting two sets of data. First, the group arrival rate was varied with all other variables held constant. Second, the number of vehicles servicing the riders was varied with all other factors held constant. 
 
 ## Phase A: Equal Vehicles, Increasing Arrival Rate
 
@@ -173,7 +180,7 @@ Phase A will study how each model performs under various loads and find an appro
 
 ### Fixed Parameters
 * Simulation Time: 6 hours
-* Travel Time Avgerage: 15 minutes
+* Travel Time Average: 15 minutes
 * Travel Time Standard Deviation: 3 minutes
 * Vehicle Loading Time Average: 3 minutes
 * Vehicle Loading Time Standard Deviation: 30 seconds
@@ -202,16 +209,13 @@ From Phase A, we can find the highest arrival rate that is suitable for steady-s
 
 # Analysis
 
-
-# Conclusions
-
 ## Hypotheses
 
 ### "Fewer drivers are able to service the same number of riders."
 
-We hypothesized that fewer vehicles are able to service the same number of riders. The main cost to ridesharing companies cost, so being able to transport more passengers with the same number of drivers means that costs decrease.
+We hypothesized that fewer vehicles are able to service the same number of riders. The main cost to ridesharing companies is driver time, so being able to transport more passengers with the same number of drivers means that cost per passenger decreases.
 
-To prove this hypothesis, we held the number of vehicles in the simulation constant at #TODO#. The arrival rate was then varied in order to determine the point at which the system became overloaded.
+To prove this hypothesis, we held the number of vehicles in the simulation constant at 100. The arrival rate was then varied in order to determine the point at which the system became overloaded.
 
 To determine the point at which the system becomes overloaded, we looked for the point where passengers had to wait at least 5 minutes for a vehicle to be assigned to them - thus indicating that new passengers were arriving more quickly than they were being dropped off. In a real-world scenario, this is the point when dynamic pricing models ("surge" or "primetime") would increase cost in order to decrease the number of passengers calling a ride.
 
@@ -219,13 +223,15 @@ To determine the point at which the system becomes overloaded, we looked for the
 
 The arrival rate was measured as *lambda*, which represented the probability in a given second that a new group of passengers would spawn. Thus, the average hourly arrival rate is lambda times the seconds in an hour. 
 
-This model showed that dedicated ridesharing became overloaded between a lambda .06 and .07. Pooled ridesharing became overloaded between .11 and .12. Thus, the same number of drivers was able to service between 216 and 252 groups of passengers in a dedicated environment, and between 396 and 432 groups of passengers in a pooled environment. Because distribution of group sizes was the same between environments, we may conclude that a pooled environment may service the same number of riders with fewer drivers. Furthermore, we may conclude that within our simulation parameters, about half as many drivers may service the same arrival rate of passenger groups in a pooled environment versus a dedicated environment.
+This model showed that dedicated ridesharing became overloaded between a lambda .06 and .07. Pooled ridesharing became overloaded between .11 and .12. Thus, the same number of drivers was able to service between 216 and 252 groups of passengers in a dedicated environment, and between 396 and 432 groups of passengers in a pooled environment. Because distribution of group sizes was the same between environments, we conclude that a pooled environment may service the same number of riders with fewer drivers. Furthermore, we conclude that, within our simulation parameters, about half as many drivers may service the same arrival rate of passenger groups in a pooled environment versus a dedicated environment.
+
+If drivers' pay is considered constant per hour, independent of distance driven, then being able to service the same number of customers with half as many drivers cuts costs by about half. Thus Uber's assertion that their [pooled rides cost 40% less than dedicated rides](http://blog.uber.com/uberpool) substantiates our conclusion.
+
 
 TODO - explain this 
 
 <a href="/images/ridesharing/assignment2-full.png"><img src="/images/ridesharing/assignment2.png" alt="Average Time from Group Spawn to Driver Assignment in Pooled Vehicle Enviroment as a Function of Vehicle Quantity"/></a>
 
-If drivers pay is considered constant per hour, independent of mileage driven, then being able to service the same number of customers with half as many drivers cuts costs by about half. Thus Uber's assertion that their [pooled rides cost 40% less than dedicated rides](http://blog.uber.com/uberpool) substantiates our conclusion.
 
 
 
