@@ -101,7 +101,7 @@ The simulation has two similar models that represent the ridesharing methods bei
 
 We modeled the simulation as an infinitely-long straight road along which vehicles travel at constant speed. By assuming that speed is constant, time becomes the primary unit for all variables. Every group has a "time" that they must travel rather than a distance.
 
-In a dedicated environment, this means that an empty vehicle is assigned to a group to pick them up. Upon assignment the model assigns a "time to pickup" - essentially how far down the road the group is from the vehicle. When the vehicle arrives, it waits a period of time for the group to get in the car. The drivers drives as many seconds down the road as the group wishes to travel. After a period of time for the group to get out of the car, the vehicle then idles until another group is assigned. 
+In a dedicated environment, this means that an empty vehicle is assigned to a group to pick them up. Upon spawn, the simulation assigns a "time to pickup" - essentially how far down the road the group is from the vehicle. When the vehicle arrives, it waits a period of time for the group to get in the car. The drivers drives as many seconds down the road as the group wishes to travel. After a period of time for the group to get out of the car, the vehicle then idles until another group is assigned. 
 
 In a pooled environment, the same basic attributes apply, but group travel can be overlapped. First an empty vehicle is assigned a group with a "time to pick up." The vehicle travels that many seconds down the road to pick up the group. The vehicle waits while the group enters the car. Then, the vehicle begins traveling toward the group's destination. 
 
