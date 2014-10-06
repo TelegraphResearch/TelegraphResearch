@@ -11,7 +11,7 @@ authors: ['philip', 'andrew']
 
 In the past few months, pooled transportation options have emerged in the multi-billion dollar ridesharing industry. Pooled ridesharing fills a niche between taxis and buses where riders can get cheap door-to-door transportation by sharing a vehicle with strangers traveling along a similar route. 
 
-Rideshare company Sidecar [was the first to market with pooled ridesharing in May](http://techcrunch.com/2014/06/29/sidecar-shareable-rides/). The company that originally caught our attention in the area was [Hitch](http://www.takehitch.com/), a ridesharing company focused solely on pooled rides. Since Hitch’s [launch in June](http://techcrunch.com/2014/06/11/hitch-ride-share/), both rideshare giants Lyft and Uber have implemented test programs for pooled ridesharing using their existing driver bases in the San Francisco Bay area. 
+Rideshare company Sidecar [was the first to market with pooled ridesharing in May](http://venturebeat.com/2014/08/06/late-to-the-party-again-sidecar-launches-carpooling-like-uber-lyft/). The company that originally caught our attention in the area was [Hitch](http://www.takehitch.com/), a ridesharing company focused solely on pooled rides. Since Hitch’s launch on May 18 2014, both rideshare giants Lyft and Uber have implemented test programs for pooled ridesharing using their existing driver bases in the San Francisco Bay area. 
 
 <div class="panel panel-info">
     <div class="panel-heading"><h3 class="panel-title no-margin">Terminology</h3></div>
@@ -48,6 +48,15 @@ The companies Hitch, Lyft, and Uber take slightly different approaches to how to
 Hitch was available in San Francisco through an iPhone application and drivers were paid a flat hourly rate. Group size, which was specified before pickup, ranged from one to three passengers.
 
 Cars are treated like buses that continually pick up and drop off users between dynamically-routed locations. After picking up a rider, other passengers may be picked up or dropped off on the way to a destination. In this sense, a busy driver may never have an empty car.
+
+<div class="panel panel-warning">
+    <div class="panel-heading"><h3 class="panel-title no-margin">Update</h3></div>
+    <div class="panel-body">
+        Tristan Hensel from Hitch sent the following correction:
+        <blockquote>Hitch allowed parties of up to 4 passengers. In all multi-pickup situations, however, the middle rear seat would be kept free to avoid possible awkward situations.</blockquote>
+    </div>
+</div>
+
 
 ### Lyft Line
 
