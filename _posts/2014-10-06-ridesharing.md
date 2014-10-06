@@ -186,7 +186,7 @@ Data was collected by independently varying the primary decision variables while
 * Number of Pooled Vehicles: Decreasing from 100 to 49 by increments of 3
 
 
-# Analysis of Hypotheses
+# Analysis
 
 ### "Fewer drivers are able to service the same number of riders."
 
