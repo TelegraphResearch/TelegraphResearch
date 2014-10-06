@@ -152,6 +152,7 @@ Data was collected by independently varying the primary decision variables while
 ## Constant Vehicles, Increasing Arrival Rate
 
 <strong>Constant Parameters:</strong>
+
 * Simulation Time: 6 hours of collected data after 1 hour of warm-up
 * Travel Time Average: 15 minutes
 * Travel Time Standard Deviation: 3 minutes
@@ -164,11 +165,13 @@ Data was collected by independently varying the primary decision variables while
 * Group Size Distribution: 1 Passenger - 70%, 2 Passengers - 29%, 3 Passengers - 1%.
 
 <strong>Variable Parameters:</strong>
+
 * Arrival Rate: Increasing from 0.01 to 0.19 by 0.01 increments
 
 ## Constant Arrival Rate, Variable Number of Vehicles
 
 <strong>Fixed Parameters:</strong>
+
 * Simulation Time: 6 hours of collected data after 1 hour of warm-up
 * Travel Time Average: 15 minutes
 * Travel Time Standard Deviation: 3 minutes
@@ -181,6 +184,7 @@ Data was collected by independently varying the primary decision variables while
 * Group Size Distribution: 1 Passenger: 70%, 2 Passengers: 29%, 3 Passengers: 1%.
 
 <strong>Variable Parameters:</strong>
+
 * Number of Pooled Vehicles: Decreasing from 100 to 49 by increments of 3
 
 
@@ -190,7 +194,7 @@ Data was collected by independently varying the primary decision variables while
 
 We hypothesized that fewer vehicles are able to service the same number of riders. The main cost to ridesharing companies is driver time, so being able to transport more passengers with the same number of drivers means that cost per passenger decreases.
 
-To prove this hypothesis, we held the number of vehicles in the simulation constant at 100. The arrival rate was then varied in order to determine the point at which the system became overloaded.
+To substantiate this hypothesis, we held the number of vehicles in the simulation constant at 100. The arrival rate was then varied in order to determine the point at which the system became overloaded.
 
 To determine the point at which the system exceeds its equilibrium and becomes overloaded, we looked for the point where passengers had to wait at least 5 minutes for a vehicle to be assigned to them - thus indicating that new passengers were arriving more quickly than they were being dropped off. In a real-world scenario, this is the point when dynamic pricing models ("surge" or "primetime") would increase cost in order to decrease the number of passengers calling a ride.
 
@@ -249,11 +253,6 @@ Thus, the conclusion from this data is that our interpretation of the Hitch mode
 
 ## Conclusions
 
-1. Pooled ridesharing is cheaper because a driver can transport about twice as many passengers in a given period as in a dedicated model. 
-
-2. Thee Hitch model of ridesharing takes about a third longer to arrive for single groups. If the target audience is single riders, then reformulating the pickup model to limit the number of co-riders may be beneficial. 
-
-3. Pooled ridesharing is a cheaper option due to higher throughput, not due to higher driver utilization. 
-
-
+1. The Hitch model of ridesharing takes about a third longer to arrive for single riders. If the target audience is single riders, then reformulating the pickup model to limit the number of co-riders may be beneficial.
+2. Pooled ridesharing is a cheaper option due to higher throughput, not due to higher driver utilization. 
 
