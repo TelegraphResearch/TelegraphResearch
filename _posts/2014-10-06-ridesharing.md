@@ -228,6 +228,9 @@ If the vehicle has to pause to pick up and drop off other passengers, then the r
 
 This graph shows that, in general, pooled rides take longer than dedicated rides. The points of best comparison are the equilibrium arrival rates of .06 and .11 for dedicated and pooled, respectively. Thus, at the equilibrium point the travel time increases by about 27% - or 7 minutes longer than an average travel time of 18 minutes in our model.
 
+<a href="/images/ridesharing/travel-full.png"><img src="/images/ridesharing/travel.png" alt="Average Time from Group Spawn to Destination as a Function of Group Arrival Rate"/></a>
+
+
 When comparing the range of total travel times for pooled versus dedicated vehicles, pooled vehicle travel times are highly inconsistent, and thus could take considerably longer than a dedicated ride in some cases.
 
 
