@@ -36,7 +36,7 @@ In order to validate these hypotheses and to evaluate the feasibility of pooled 
 The companies Hitch, Lyft, and Uber take slightly different approaches to a similar concept. 
 
 ### Hitch
-Hitch was available in San Francisco through an iPhone app. Drivers are currently paid a flat hourly rate. Groups size, which must be specified before pickup, may range from one to three passengers.
+Hitch was available in San Francisco through an iPhone app. Drivers are currently paid a flat hourly rate. Group size, which must be specified before pickup, may range from one to three passengers.
 
 Cars are treated like buses that continually pick up and drop off users between dynamically-routed locations. After picking up a rider, other passengers may be picked up or dropped off on the way to a destination. In this sense, a busy driver may never have an empty car. 
 
