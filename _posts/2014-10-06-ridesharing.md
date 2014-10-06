@@ -53,9 +53,7 @@ Cars are treated like buses that continually pick up and drop off users between 
     <div class="panel-heading"><h3 class="panel-title no-margin">Update</h3></div>
     <div class="panel-body">
         Tristan Hensel from Hitch sent the following correction:
-        <blockquote>
-            Hitch allowed parties of up to 4 passengers. In all multi-pickup situations, however, the middle rear seat would be kept free to avoid possible awkward situations. 
-        </blockquote>
+        <blockquote>Hitch allowed parties of up to 4 passengers. In all multi-pickup situations, however, the middle rear seat would be kept free to avoid possible awkward situations.</blockquote>
     </div>
 </div>
 
