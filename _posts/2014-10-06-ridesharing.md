@@ -6,7 +6,6 @@ Description: Data
 label: ridesharing
 category: Analysis
 authors: ['philip', 'andrew']
-latex: true
 ---
 
 
@@ -52,13 +51,13 @@ Cars are treated like buses that continually pick up and drop off users between 
 
 ### Lyft Line
 
-Lyft Line is available in San Francisco. All standard Lyft drivers (excluding Lyft Premium) are eligible to be assigned pooled rides. Riders are given a strict 60 second window after the driver arrives to enter the car, and cars only pick up two groups of people. Prices before the ride, riders may specify that there are one or two passengers in their group, and drivers are paid the combined fares of the groups. 
+Lyft Line is available in San Francisco. All standard Lyft drivers (excluding Lyft Premium) are eligible to be assigned pooled rides. Riders are given a strict 60 second window after the driver arrives to enter the car, and cars only pick up two groups of people. Riders may select whether they are traveling alone or with a second person. Prices determined prior to ordering the car and shown to the passenger, and drivers are paid the combined fares of the groups. 
 
 Groups are paired based on similarities between their pickup location, destination, and travel route. In this sense, drivers are not dynamically routed, but are assigned a full route consisting of no more than two pickups and two drop-offs.
 
 ### Uber Pool
 
-Uber Pool is available in limited beta in the San Francisco Bay. All UberX drivers are eligible to be tasked Uber Pool fares. Uber Pool strictly allows only parties of one person, and a maximum of two passengers are in an Uber Pool during the course of the ride. 
+Uber Pool is available in limited beta in the San Francisco Bay. All UberX drivers are eligible to be tasked Uber Pool fares. Uber Pool strictly allows only parties of one person, and a maximum of two passengers are in an Uber Pool during the course of the ride. Uber Pool pricing is dynamic and is based on the actual mileage and time of the ride, which is split between the passengers.
 
 Riders are paired based on their pickup location and destination with another rider traveling a similar route. Again, drivers are not dynamically routed, but are assigned a full route consisting of no more than two pickups and two drop-offs. 
 
