@@ -182,6 +182,8 @@ Phase A will study how each model performs under various loads and find an appro
 * Simulation Time: 6 hours
 * Travel Time Average: 15 minutes
 * Travel Time Standard Deviation: 3 minutes
+* Vehicle Pickup Time Average: 5 minutes
+* Vehicle Pickup Time Standard Deviation: 2 minutes
 * Vehicle Loading Time Average: 3 minutes
 * Vehicle Loading Time Standard Deviation: 30 seconds
 * Number of Pooled Vehicles: 100
@@ -199,6 +201,8 @@ From Phase A, we can find the highest arrival rate that is suitable for steady-s
 * Simulation Time: 6 hours
 * Travel Time Avgerage: 15 minutes
 * Travel Time Standard Deviation: 3 minutes
+* Vehicle Pickup Time Average: 5 minutes
+* Vehicle Pickup Time Standard Deviation: 2 minutes
 * Vehicle Loading Time Average: 3 minutes
 * Vehicle Loading Time Standard Deviation: 30 seconds
 * Number of Dedicatd Vehicles: 100
