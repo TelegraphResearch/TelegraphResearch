@@ -207,7 +207,7 @@ To determine the point at which the system exceeds its equilibrium and becomes o
 
 <a href="/images/ridesharing/assignment-full.png"><img src="/images/ridesharing/assignment.png" alt="Average Time from Group Spawn to Driver Assignment as a Function of Group Arrival Rate"/></a>
 
-The arrival rate was measured as arrival rate, *lambda*, which represents the probability in a given second that a new group of passengers would spawn. The average hourly arrival rate is lambda times the seconds in an hour.  FIXME
+The arrival rate was measured as arrival rate, *lambda*, which represents the probability in a given second that a new group of passengers would spawn. The average hourly arrival rate is lambda times the seconds in an hour.
 
 This model showed that dedicated ridesharing became overloaded between a lambda of .06 and .07. Pooled ridesharing became overloaded between .11 and .12. Thus, the same number of drivers was able to service between 216 and 252 groups of passengers in a dedicated environment, and between 396 and 432 groups of passengers in a pooled environment. Because distribution of group sizes was the same between environments, we conclude that a pooled environment may service the same number of riders with fewer drivers. Furthermore, we conclude that, within our simulation parameters, about half as many drivers may service the same arrival rate of passenger groups in a pooled environment versus a dedicated environment.
 
