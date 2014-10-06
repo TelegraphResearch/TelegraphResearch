@@ -14,7 +14,17 @@ In the past few months, pooled transportation options have emerged in the multi-
 
 Rideshare company Sidecar [was the first to market with pooled ridesharing in May](http://techcrunch.com/2014/06/29/sidecar-shareable-rides/). The company that originally caught our attention in the area was [Hitch](http://www.takehitch.com/), a ridesharing company focused solely on pooled rides. Since Hitch’s [launch in June](http://techcrunch.com/2014/06/11/hitch-ride-share/), both rideshare giants Lyft and Uber have implemented test programs for pooled ridesharing using their existing driver bases in the San Francisco Bay area. 
 
-Compared to traditional “dedicated” ridesharing where a customer commissions a full vehicle, Telegraph Research sought to quantify four hypotheses about pooled ridesharing.
+Compared to traditional *dedicated* ridesharing where a customer commissions a full vehicle, Telegraph Research sought to quantify four hypotheses about pooled ridesharing.
+
+<div class="panel panel-info">
+    <div class="panel-heading"><h3 class="panel-title no-margin">Terminology</h3></div>
+    <div class="panel-body">
+        <ul>
+            <li><strong>Dedicated rideshare:</strong> A traditional, taxi-like rideshare where your group controls the vehicle from pickup until dropoff.</li>
+            <li><strong>Pooled rideshare:</strong> A rideshare where you may share the ride with other strangers, which thus may be cheaper.</li>
+        </ul>
+    </div>
+</div>
 
 ### Hypotheses 
 
