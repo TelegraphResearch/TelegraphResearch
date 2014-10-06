@@ -21,7 +21,7 @@ Compared to traditional *dedicated* ridesharing where a customer commissions a f
     <div class="panel-body">
         <ul>
             <li><strong>Dedicated rideshare:</strong> A traditional, taxi-like rideshare where your group controls the vehicle from pickup until dropoff.</li>
-            <li><strong>Pooled rideshare:</strong> A rideshare where you may share the ride with other strangers, which thus may be cheaper.</li>
+            <li><strong>Pooled rideshare:</strong> A rideshare where you may share the ride with  strangers that may be picked up or dropped off along the way to your destination.</li>
         </ul>
     </div>
 </div>
