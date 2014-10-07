@@ -16,7 +16,7 @@ Rideshare company Sidecar [was the first to market with pooled ridesharing in Ma
 <div class="panel panel-warning">
     <div class="panel-heading"><h3 class="panel-title no-margin">Update</h3></div>
     <div class="panel-body">
-        We based our assertion that Sidecar was first to market based on the date that they claim to have started testing in the San Francisco Bay. According to Tristan Hensel from Hitch, they were testing in beta prior to this, and thus were first to beta and first to market with pooled ridesharing.
+        We based our assertion that Sidecar was first to market on the date that they claim to have started testing in the San Francisco Bay. According to Tristan Hensel from Hitch, his company was testing in beta prior to this, and thus were first to beta and first to market with pooled ridesharing.
     </div>
 </div>
 
