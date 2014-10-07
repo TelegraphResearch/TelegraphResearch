@@ -11,7 +11,14 @@ authors: ['philip', 'andrew']
 
 In the past few months, pooled transportation options have emerged in the multi-billion dollar ridesharing industry. Pooled ridesharing fills a niche between taxis and buses where riders can get cheap door-to-door transportation by sharing a vehicle with strangers traveling along a similar route. 
 
-Rideshare company Sidecar [was the first to market with pooled ridesharing in May](http://venturebeat.com/2014/08/06/late-to-the-party-again-sidecar-launches-carpooling-like-uber-lyft/). The company that originally caught our attention in the area was [Hitch](http://www.takehitch.com/), a ridesharing company focused solely on pooled rides. Since Hitch’s launch on May 18 2014, both rideshare giants Lyft and Uber have implemented test programs for pooled ridesharing using their existing driver bases in the San Francisco Bay area. 
+Rideshare company Sidecar [was the first to market with pooled ridesharing in May](http://venturebeat.com/2014/08/06/late-to-the-party-again-sidecar-launches-carpooling-like-uber-lyft/). The company that originally caught our attention in the area was [Hitch](http://www.takehitch.com/), a ridesharing company focused solely on pooled rides. Since Hitch’s launch on May 18 2014, both rideshare giants Lyft and Uber have implemented test programs for pooled ridesharing using their existing driver bases in the San Francisco Bay area.
+
+<div class="panel panel-warning">
+    <div class="panel-heading"><h3 class="panel-title no-margin">Update</h3></div>
+    <div class="panel-body">
+        We based our assertion that Sidecar was first to market on the date that they claim to have started testing in the San Francisco Bay. According to Tristan Hensel from Hitch, his company was testing in beta prior to this, and thus were first to beta and first to market with pooled ridesharing.
+    </div>
+</div>
 
 <div class="panel panel-info">
     <div class="panel-heading"><h3 class="panel-title no-margin">Terminology</h3></div>
